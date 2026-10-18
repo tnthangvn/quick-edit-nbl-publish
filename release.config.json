@@ -1,0 +1,12 @@
+{
+  "sourceRef": "main",
+  "packageName": "quick-edit-nbl",
+  "binName": "quick-edit-nbl",
+  "description": "Spec Studio — local web app for editing and publishing specs.",
+  "license": "MIT",
+  "repository": "https://github.com/tnthangvn/quick-edit-nbl-publish",
+  "runtimeAssets": [
+    "messages"
+  ],
+  "defaultPort": 3021
+}

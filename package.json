@@ -1,0 +1,15 @@
+{
+  "name": "quick-edit-nbl-publish",
+  "private": true,
+  "description": "Builds quick-edit-nbl from a private source repo and publishes only the compiled output to npm.",
+  "scripts": {
+    "build": "node scripts/build-release.mjs",
+    "release": "node scripts/build-release.mjs && scripts/push-release.sh",
+    "release:dry": "node scripts/build-release.mjs && scripts/push-release.sh --no-push",
+    "pack:check": "cd dist && npm pack --dry-run",
+    "publish:local": "cd dist && npm publish --access public"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}

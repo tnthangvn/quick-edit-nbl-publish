@@ -1,0 +1,9 @@
+# machine-local config (source repo path)
+/release.local.json
+
+# build workspace (exported source + pnpm install) and assembled package
+/.work/
+/dist/
+*.tgz
+node_modules/
+.env*
