@@ -1,0 +1,12 @@
+{
+  "errors": {
+    "SETTING": {
+      "CLI_PROFILE_NOT_FOUND": "The selected CLI profile was not found.",
+      "CLI_PROFILE_DUPLICATE": "CLI profile IDs must be different from each other.",
+      "WORKSPACE_ID_MISMATCH": "These settings do not belong to the current Workspace.",
+      "SECRET_NOT_SET": "Credentials have not been entered ({kind}).",
+      "SECRET_NOT_REVEALABLE": "This information cannot be shown again ({kind}).",
+      "PR_BRANCH_IS_BASE": "The PR branch must be different from the base branch."
+    }
+  }
+}

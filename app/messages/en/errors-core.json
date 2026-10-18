@@ -1,0 +1,26 @@
+{
+  "errors": {
+    "INTERNAL": {
+      "UNEXPECTED": "Something went wrong. Please try again. Reference: {traceId}"
+    },
+    "VALIDATION": {
+      "FAILED": "Some information is not valid. Please check and try again."
+    },
+    "FIELD": {
+      "REQUIRED": "Please fill in this field.",
+      "INVALID_FORMAT": "The format is not correct.",
+      "TOO_SHORT": "Must be at least {min} characters.",
+      "TOO_LONG": "Must be at most {max} characters.",
+      "INVALID_VALUE": "This value is not valid."
+    },
+    "REQUEST": {
+      "MALFORMED_JSON": "The data sent is not valid. Reload the page and try again.",
+      "UNSUPPORTED_MEDIA_TYPE": "The data was sent in an unsupported format. Reload the page and try again.",
+      "FORBIDDEN_ORIGIN": "The request was blocked because it did not come from Spec Studio on this computer."
+    },
+    "RESOURCE": {
+      "NOT_FOUND": "The data was not found.",
+      "CONFLICT": "The data just changed or is being processed. Try again later."
+    }
+  }
+}

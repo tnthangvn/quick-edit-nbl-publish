@@ -1,0 +1,8 @@
+{
+  "errors": {
+    "PUBLISH": {
+      "TARGET_NOT_CONFIGURED": "The destination {target} has not been set up for this Workspace.",
+      "PREREQUISITE_FAILED": "Skipped because saving the file on this computer did not succeed."
+    }
+  }
+}

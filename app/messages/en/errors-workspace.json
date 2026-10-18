@@ -1,0 +1,35 @@
+{
+  "errors": {
+    "WORKSPACE": {
+      "NOT_FOUND": "The Workspace was not found.",
+      "NAME_TAKEN": "The project name \"{name}\" is already in use. Choose a different name.",
+      "PATH_IN_USE": "This folder already belongs to another Workspace.",
+      "PATH_NESTED": "This folder overlaps the project “{name}” ({path}), so the Spec files of the two projects would get mixed up. Choose a folder outside it.",
+      "ALREADY_REGISTERED": "This Workspace is already in the list (in the folder {path}).",
+      "CONFIG_EXISTS": "This folder already has a project configuration. Use \"Open existing folder\" instead.",
+      "CONFIG_NOT_FOUND": "This folder has no project configuration yet (.spec-studio/config.json).",
+      "CONFIG_INVALID": "The project configuration file (.spec-studio/config.json) is not valid.",
+      "CONFIG_ID_MISMATCH": "The folder {path} belongs to a different project (the ID in .spec-studio/config.json does not match).",
+      "FOLDER_NOT_FOUND": "The folder was not found.",
+      "FOLDER_MISSING": "The Workspace folder was not found. Choose \"Locate\" or remove it from the list.",
+      "FOLDER_NOT_WRITABLE": "Cannot write to this folder. Check your access permissions.",
+      "FOLDER_NOT_EMPTY": "The download folder must be empty or not exist yet.",
+      "INVALID_PATH": "The path is not valid. Enter the full path.",
+      "INVALID_SPECS_DIR": "The Spec folder must be inside the Workspace.",
+      "INVALID_GIT_REMOTE": "The repository address is not valid (use https://, ssh:// or git@host:owner/repo).",
+      "INVALID_BRANCH": "The branch name is not valid.",
+      "INVALID_REPO": "The repository must look like owner/repo.",
+      "CLONE_FAILED": "Could not download the repository. Check the address and your access.",
+      "DRIVE_DOWNLOAD_FAILED": "Could not download the folder from Google Drive. Try again.",
+      "NOTEBOOK_IMPORT_FAILED": "Could not import Specs from NotebookLM. Try again.",
+      "GIT_REMOTE_UNREACHABLE": "Could not connect to Git. Check the address and your network.",
+      "GIT_BRANCH_NOT_FOUND": "The branch {branch} was not found on Git.",
+      "DRIVE_NOT_CONFIGURED": "Google sign-in for Drive has not been set up. Contact your administrator.",
+      "DRIVE_ACCESS_DENIED": "You do not have permission to read or write this folder on Google Drive.",
+      "NOTEBOOK_UNREACHABLE": "Could not access the notebook. Check the Notebook ID and sign in to NotebookLM.",
+      "DELETE_NOT_CONFIRMED": "Type the confirmation word to delete the folder on this computer.",
+      "DELETE_UNSAFE": "The folder {path} was not deleted because it is not safe to delete ({reason}).",
+      "HAS_NESTED_WORKSPACES": "Cannot delete because this folder contains other projects in the list ({paths}). Remove those projects first."
+    }
+  }
+}

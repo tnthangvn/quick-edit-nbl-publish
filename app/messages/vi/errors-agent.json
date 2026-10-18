@@ -1,0 +1,24 @@
+{
+  "errors": {
+    "AGENT": {
+      "API_KEY_MISSING": "Chưa có API key cho nhà cung cấp này. Mở Cài đặt, vào mục API trực tiếp để nhập key.",
+      "LLM_AUTH_FAILED": "Nhà cung cấp không chấp nhận API key. Hãy kiểm tra lại key trong Cài đặt.",
+      "MODEL_NOT_FOUND": "Không tìm thấy model \"{model}\" ở nhà cung cấp đã chọn. Hãy chọn model khác.",
+      "LLM_RATE_LIMITED": "Nhà cung cấp đang tạm giới hạn số lần gọi. Hãy thử lại sau ít phút.",
+      "LLM_UNREACHABLE": "Không kết nối được tới nhà cung cấp. Hãy kiểm tra mạng hoặc địa chỉ máy chủ.",
+      "LLM_REQUEST_FAILED": "Nhà cung cấp báo lỗi khi xử lý yêu cầu. Hãy thử lại.",
+      "INVALID_MESSAGES": "Nội dung cuộc trò chuyện không hợp lệ. Hãy mở cuộc trò chuyện mới.",
+      "CLI_PROFILE_NOT_FOUND": "Không tìm thấy hồ sơ CLI đã chọn. Hãy chọn hồ sơ khác.",
+      "CLI_NOT_INSTALLED": "Máy chưa cài lệnh \"{command}\". Hãy cài đặt rồi thử lại.",
+      "CLI_SPEC_CONTEXT_REQUIRED": "Hồ sơ CLI này cần ít nhất một Spec để Agent đọc. Hãy chọn Spec rồi gửi lại.",
+      "CLI_SPAWN_FAILED": "Không khởi động được CLI Agent. Hãy kiểm tra lệnh trong Cài đặt.",
+      "CLI_EXIT_NONZERO": "CLI Agent đã dừng và báo lỗi (mã {exitCode}). Xem nhật ký để biết thêm.",
+      "CLI_TIMEOUT": "CLI Agent chạy quá lâu nên đã bị dừng. Hãy thử lại với yêu cầu nhỏ hơn.",
+      "SANDBOX_FAILED": "Không tạo được bản sao tạm để chạy CLI Agent. Hãy thử lại.",
+      "RUN_NOT_FOUND": "Không tìm thấy lần chạy CLI Agent này.",
+      "RUN_ALREADY_ACTIVE": "Workspace này đang có một lần chạy CLI Agent chưa xong. Hãy đợi hoặc dừng lần đó trước.",
+      "SESSION_NOT_FOUND": "Không tìm thấy cuộc trò chuyện này (có thể đã bị xoá).",
+      "CLI_PERMISSION_DENIED": "CLI Agent chưa làm được gì vì bị từ chối quyền dùng công cụ khi chạy nền. Hãy chọn mức quyền “Bỏ qua xác nhận” rồi gửi lại."
+    }
+  }
+}

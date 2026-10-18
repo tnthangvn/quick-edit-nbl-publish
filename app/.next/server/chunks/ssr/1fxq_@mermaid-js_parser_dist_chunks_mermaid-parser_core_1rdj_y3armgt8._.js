@@ -1,0 +1,3 @@
+(()=>{"use strict";module.exports=[354278,a=>{var b=a.i(534738),c=class extends b.zn{static{(0,b._f)(this,"WardleyValueConverter")}runCustomConverter(a,b,c){return"LINK_LABEL"===a.name.toUpperCase()?b.substring(1).trim():void 0}},d={parser:{ValueConverter:(0,b._f)(()=>new c,"ValueConverter")}};function e(a=b.qh){let c=(0,b.s3)((0,b.ac)(a),b.Sg),f=(0,b.s3)((0,b.Ut)({shared:c}),b.a1,d);return c.ServiceRegistry.register(f),{shared:c,Wardley:f}}(0,b._f)(e,"createWardleyServices"),a.s(["u",0,d,"A",0,e])},92599,a=>{var b=a.i(354278);a.i(534738),a.S([b,"createWardleyServices,A"],92599)}]})();
+
+//# sourceMappingURL=1fxq_%40mermaid-js_parser_dist_chunks_mermaid-parser_core_1rdj_y3armgt8._.js.map

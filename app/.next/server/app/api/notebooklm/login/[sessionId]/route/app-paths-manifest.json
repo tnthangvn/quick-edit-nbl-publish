@@ -1,0 +1,3 @@
+{
+  "/api/notebooklm/login/[sessionId]/route": "app/api/notebooklm/login/[sessionId]/route.js"
+}

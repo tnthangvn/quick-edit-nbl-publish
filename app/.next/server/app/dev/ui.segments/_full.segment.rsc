@@ -1,0 +1,43 @@
+1:"$Sreact.fragment"
+2:"$Sreact.suspense"
+6:"/_next/static/chunks/33pqsui_v38o5.js"
+7:"/_next/static/chunks/20wh5wi3fhm6u.js"
+8:"/_next/static/chunks/36rpd0av9khry.js"
+9:"/_next/static/chunks/0g7hd-zr7gxyx.js"
+a:I[639063,["$6","$7","$8","$9"],"default"]
+b:I[764269,["$6","$7","$8","$9"],"default"]
+10:I[19006,["$6","$7","$8","$9"],"OutletBoundary"]
+13:"ViewportBoundary"
+14:I[19006,["$6","$7","$8","$9"],"$13"]
+16:"MetadataBoundary"
+17:I[19006,["$6","$7","$8","$9"],"$16"]
+1a:I[810565,["$6","$7","$8","$9"],"default",1]
+:HL["/_next/static/chunks/0c-8cfgovices.css","style"]
+:HL["/_next/static/chunks/3glbyyjdl0rka.css","style"]
+:HL["/_next/static/media/53b9e256198e5412-s.p.390ncx5urfkfu.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.0wgildi0cnwt9.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+4:X
+c:X
+12:X
+e:[["children",{"s":"__PAGE__","h":514,"d":{"r":["$","$1","c",{"children":["$Lf",[["$","script","script-0",{"src":"/_next/static/chunks/38bs6egt5msp3.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/413_w5yek8_nj.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/3atm3wfieu2ql.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/_next/static/chunks/1nrgzdzli64p2.js","async":true,"nonce":"$undefined"}]],["$","$L10",null,{"children":["$","$2",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]]}],"p":true,"v":"$12"}}]]
+d:[["children",{"s":"ui","h":514,"d":{"r":["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":true,"v":"$c"},"c":"$Qe"}]]
+5:[["children",{"s":"dev","h":514,"d":{"r":["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$Lb",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":true,"v":"$c"},"c":"$Qd"}]]
+19:X
+1b:X
+1c:X
+0:{"P":null,"c":["","dev","ui"],"q":"","i":false,"t":{"t":{"s":"","h":530,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0c-8cfgovices.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/3glbyyjdl0rka.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/33pqsui_v38o5.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/20wh5wi3fhm6u.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/36rpd0av9khry.js","async":true,"nonce":"$undefined"}],["$","script","script-3",{"src":"/_next/static/chunks/0g7hd-zr7gxyx.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"vi","suppressHydrationWarning":true,"className":"BiM78G_variable _8Li5zG_variable h-full","children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(()=>{try{var m=document.cookie.match(/(?:^|; )NEXT_LOCALE=(vi|en)/);if(m)document.documentElement.lang=m[1]}catch(e){}})()"}}]}],["$","body",null,{"className":"h-full","children":["$","$2",null,{"fallback":null,"children":"$L3"}]}]]}]]}],"p":true,"v":"$4"},"c":"$Q5"},"h":{"r":["$","$1","h",{"children":[null,["$","$L14",null,{"children":"$L15"}],["$","$L17",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$2",null,{"name":"Next.Metadata","children":"$L18"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":true,"v":"$19"}},"m":"$undefined","G":["$1a",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0c-8cfgovices.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/3glbyyjdl0rka.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$1b","s":"$1c","a":"$@1d","l":"$undefined","p":"$undefined","d":"$undefined","b":"Zmp9Jfe94u_f6HbtbCqnb","u":"$@1e"}
+f:E{"digest":"NEXT_HTTP_ERROR_FALLBACK;404"}
+c:C
+1c:300
+1e:true
+15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+1f:I[725748,["$6","$7","$8","$9"],"IconMark"]
+11:null
+18:[["$","title","0",{"children":"UI Gallery · Spec Studio"}],["$","meta","1",{"name":"description","content":"Sửa spec Markdown cùng AI Agent và đồng bộ lên NotebookLM"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L1f","3",{}]]
+1c:C
+19:C
+1b:C
+12:C
+4:C
+1d:null

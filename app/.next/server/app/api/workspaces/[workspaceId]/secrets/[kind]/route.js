@@ -1,0 +1,13 @@
+var R=require("../../../../../../chunks/[turbopack]_runtime.js")("server/app/api/workspaces/[workspaceId]/secrets/[kind]/route.js")
+R.c("server/chunks/[root-of-the-server]__0sojp_n5r-3k4._.js")
+R.c("server/chunks/src_containers_Studio_Workspace_1do0e1ujxrssp._.js")
+R.c("server/chunks/[root-of-the-server]__083c4u10q_r26._.js")
+R.c("server/chunks/[root-of-the-server]__1b34mwzm6u-ca._.js")
+R.c("server/chunks/_0vxs--q8pnujf._.js")
+R.c("server/chunks/[root-of-the-server]__1lskyo_g92bwe._.js")
+R.c("server/chunks/[root-of-the-server]__1isi1clwrtvrq._.js")
+R.c("server/chunks/[root-of-the-server]__1dqyhbshziobo._.js")
+R.c("server/chunks/[root-of-the-server]__1a52v8_42si76._.js")
+R.c("server/chunks/1jng_app_api_workspaces_[workspaceId]_secrets_[kind]_route_actions_0oix5gmlh2flm.js")
+R.m(178997)
+module.exports=R.m(178997).exports

@@ -1,0 +1,3 @@
+{
+  "/api/notebooklm/notebooks/[notebookId]/sources/route": "app/api/notebooklm/notebooks/[notebookId]/sources/route.js"
+}

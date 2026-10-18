@@ -1,0 +1,35 @@
+{
+  "name": "quick-edit-nbl",
+  "version": "0.1.0",
+  "description": "Spec Studio — local web app for editing and publishing specs.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnthangvn/quick-edit-nbl-publish.git"
+  },
+  "bin": {
+    "quick-edit-nbl": "bin/cli.mjs"
+  },
+  "files": [
+    "bin",
+    "app",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "dependencies": {
+    "@napi-rs/keyring": "2.1.0",
+    "chokidar": "5.0.0",
+    "execa": "10.1.0",
+    "next": "16.4.0",
+    "pg": "8.23.1",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "buildInfo": {
+    "sourceCommit": "747e9db3442088364be3de113c273ae1253e76bf",
+    "builtAt": "2026-10-18T15:18:48.051Z"
+  }
+}

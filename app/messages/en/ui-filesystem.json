@@ -1,0 +1,36 @@
+{
+  "filesystem": {
+    "browser": {
+      "title": "Choose a folder",
+      "description": "Choose the working folder on this computer.",
+      "parentFolder": "Parent folder",
+      "empty": "No subfolders.",
+      "loadFailed": "Could not load the folder list.",
+      "notWritable": "This folder is not writable.",
+      "pathPlaceholder": "/home/you/projects",
+      "goTo": "Go",
+      "select": "Select This Folder",
+      "search": "Search folders",
+      "searchPlaceholder": "Search {count} folders…",
+      "noMatch": "No folders match “{query}”.",
+      "newFolder": "New folder",
+      "newFolderPlaceholder": "Folder name",
+      "create": "Create"
+    },
+    "drive": {
+      "title": "Choose a Google Drive folder",
+      "description": "The Google Drive folder that holds the project's spec files (.md).",
+      "breadcrumb": "Folder path",
+      "myDrive": "My Drive",
+      "search": "Search Google Drive folders",
+      "searchPlaceholder": "Search folders by name across all of Drive…",
+      "loading": "Loading folders…",
+      "empty": "No subfolders.",
+      "noMatch": "No folders match “{query}”.",
+      "needGoogle": "Sign in to Google to browse Drive.",
+      "selected": "Selected: {name}",
+      "pickHint": "Open a folder, then choose it.",
+      "select": "Select This Folder"
+    }
+  }
+}

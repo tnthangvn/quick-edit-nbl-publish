@@ -1,0 +1,36 @@
+{
+  "filesystem": {
+    "browser": {
+      "title": "Chọn thư mục",
+      "description": "Chọn thư mục làm việc trên máy.",
+      "parentFolder": "Thư mục cha",
+      "empty": "Không có thư mục con.",
+      "loadFailed": "Không tải được danh sách thư mục.",
+      "notWritable": "Không ghi được vào thư mục này.",
+      "pathPlaceholder": "/home/you/projects",
+      "goTo": "Đi tới",
+      "select": "Chọn thư mục này",
+      "search": "Tìm thư mục",
+      "searchPlaceholder": "Tìm trong {count} thư mục…",
+      "noMatch": "Không có thư mục nào khớp “{query}”.",
+      "newFolder": "Thư mục mới",
+      "newFolderPlaceholder": "Tên thư mục",
+      "create": "Tạo"
+    },
+    "drive": {
+      "title": "Chọn thư mục Google Drive",
+      "description": "Thư mục Google Drive chứa các file spec (.md) của dự án.",
+      "breadcrumb": "Đường dẫn thư mục",
+      "myDrive": "Drive của tôi",
+      "search": "Tìm thư mục Google Drive",
+      "searchPlaceholder": "Tìm thư mục theo tên trên toàn bộ Drive…",
+      "loading": "Đang tải thư mục…",
+      "empty": "Không có thư mục con.",
+      "noMatch": "Không có thư mục nào khớp “{query}”.",
+      "needGoogle": "Hãy đăng nhập Google để xem Drive.",
+      "selected": "Đã chọn: {name}",
+      "pickHint": "Mở một thư mục rồi bấm chọn.",
+      "select": "Chọn thư mục này"
+    }
+  }
+}

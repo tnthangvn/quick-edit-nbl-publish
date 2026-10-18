@@ -1,0 +1,26 @@
+{
+  "errors": {
+    "INTERNAL": {
+      "UNEXPECTED": "Đã có lỗi xảy ra. Hãy thử lại. Mã tra cứu: {traceId}"
+    },
+    "VALIDATION": {
+      "FAILED": "Một số thông tin chưa hợp lệ. Hãy kiểm tra lại."
+    },
+    "FIELD": {
+      "REQUIRED": "Vui lòng nhập mục này.",
+      "INVALID_FORMAT": "Định dạng chưa đúng.",
+      "TOO_SHORT": "Cần ít nhất {min} ký tự.",
+      "TOO_LONG": "Chỉ được tối đa {max} ký tự.",
+      "INVALID_VALUE": "Giá trị chưa hợp lệ."
+    },
+    "REQUEST": {
+      "MALFORMED_JSON": "Dữ liệu gửi lên không hợp lệ. Hãy tải lại trang rồi thử lại.",
+      "UNSUPPORTED_MEDIA_TYPE": "Dữ liệu gửi lên không đúng định dạng được hỗ trợ. Hãy tải lại trang rồi thử lại.",
+      "FORBIDDEN_ORIGIN": "Yêu cầu bị chặn vì không đến từ Spec Studio trên máy này."
+    },
+    "RESOURCE": {
+      "NOT_FOUND": "Không tìm thấy dữ liệu.",
+      "CONFLICT": "Dữ liệu vừa thay đổi hoặc đang được xử lý. Hãy thử lại sau."
+    }
+  }
+}

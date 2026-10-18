@@ -1,0 +1,220 @@
+{
+  "common": {
+    "appName": "Spec Studio",
+    "actions": {
+      "backToProjects": "Về danh sách dự án",
+      "close": "Đóng",
+      "cancel": "Huỷ",
+      "save": "Lưu",
+      "saving": "Đang lưu…",
+      "saved": "Đã lưu",
+      "retry": "Thử lại",
+      "settings": "Cài đặt",
+      "rename": "Đổi tên",
+      "forceSync": "Đồng bộ lại",
+      "deleteSpec": "Xoá Spec",
+      "more": "Thêm thao tác",
+      "editConfig": "Sửa cấu hình",
+      "removeFromList": "Gỡ khỏi danh sách",
+      "locate": "Tìm lại",
+      "test": "Kiểm tra",
+      "edit": "Sửa",
+      "delete": "Xoá",
+      "send": "Gửi",
+      "stop": "Dừng",
+      "newProject": "Dự án mới",
+      "toggleSidebar": "Ẩn/hiện thanh bên",
+      "openUrl": "Mở liên kết",
+      "reply": "Trả lời"
+    },
+    "status": {
+      "SYNCED": "Đã đồng bộ",
+      "UNSAVED": "Chưa lưu",
+      "SYNCING": "Đang đồng bộ…",
+      "ERROR": "Lỗi",
+      "MODIFIED": "Đã sửa ngoài ứng dụng"
+    },
+    "combobox": {
+      "placeholder": "Chọn…",
+      "search": "Tìm…",
+      "searchOrType": "Tìm hoặc nhập giá trị…",
+      "count": "{shown}/{total}",
+      "empty": "Không có kết quả",
+      "useCustom": "Dùng “{value}”",
+      "selectedCount": "{count} đã chọn",
+      "clear": "Bỏ chọn",
+      "selectAll": "Chọn tất cả",
+      "selectResults": "Chọn kết quả",
+      "remove": "Bỏ {label}"
+    },
+    "publish": {
+      "target": {
+        "LOCAL": "Ghi file trên máy",
+        "GIT": "Git · Push",
+        "DRIVE": "Google Drive",
+        "NOTEBOOK": "NotebookLM"
+      },
+      "targetShort": {
+        "LOCAL": "Trên máy",
+        "GIT": "Git",
+        "DRIVE": "Drive",
+        "NOTEBOOK": "NBL"
+      },
+      "step": {
+        "PENDING": "Đang chờ",
+        "RUNNING": "Đang chạy",
+        "DONE": "Xong",
+        "ERROR": "Lỗi",
+        "SKIPPED": "Bỏ qua"
+      },
+      "chip": "{target}: {status}",
+      "skip": {
+        "GIT_AUTO_COMMIT_OFF": "Tự động Commit đang tắt",
+        "DRIVE_PUSH_OFF": "Tự động tải lên sau khi duyệt đang tắt",
+        "NBL_AUTO_SYNC_OFF": "Tự động đồng bộ NotebookLM đang tắt",
+        "NBL_CONFIRM_REQUIRED": "Bấm Đồng bộ để đưa lên NotebookLM"
+      },
+      "awaitingConfirm": "Chờ bạn xác nhận",
+      "confirmSync": "Đồng bộ"
+    },
+    "storage": {
+      "LOCAL": "Trên máy",
+      "GIT": "Git",
+      "DRIVE": "Drive"
+    },
+    "workspace": {
+      "open": "Mở {name}",
+      "menu": "Thao tác với {name}",
+      "folderMissing": "Không tìm thấy thư mục",
+      "notebook": "NotebookLM · {name}",
+      "notebookNone": "NotebookLM · Chưa kết nối",
+      "specCount": "{count, plural, other {# spec}}",
+      "neverOpened": "Chưa mở lần nào",
+      "newProjectHint": "Trên máy · Git · Google Drive",
+      "status": {
+        "SYNCED": "Đã đồng bộ",
+        "UNSAVED": "Có thay đổi chưa Push",
+        "SYNCING": "Đang đồng bộ…",
+        "ERROR": "Lỗi",
+        "MODIFIED": "Có file sửa ngoài ứng dụng chưa đồng bộ"
+      }
+    },
+    "spec": {
+      "menu": "Thao tác với {name}",
+      "addToContext": "Đính kèm {name} cho Agent đọc"
+    },
+    "mode": {
+      "label": "Chế độ Agent",
+      "API": "API key",
+      "CLI": "CLI Agent"
+    },
+    "connector": {
+      "type": {
+        "CLI": "CLI",
+        "MCP": "MCP",
+        "TOKEN": "Token",
+        "SSH": "SSH"
+      },
+      "provider": {
+        "GITHUB": "GitHub",
+        "GITLAB": "GitLab",
+        "BITBUCKET": "Bitbucket",
+        "GITEA": "Gitea / Forgejo",
+        "GENERIC": "Git thông thường"
+      },
+      "state": {
+        "CONNECTED": "Đã kết nối",
+        "NEEDS_LOGIN": "Cần đăng nhập lại",
+        "NOT_FOUND": "Không tìm thấy CLI",
+        "ERROR": "Lỗi kết nối",
+        "UNCHECKED": "Chưa kiểm tra"
+      },
+      "menu": "Thao tác với {name}"
+    },
+    "chat": {
+      "agent": "Agent",
+      "log": "Nhật ký",
+      "running": "Đang chạy",
+      "replyTitle": "Trả lời đoạn trích",
+      "replyLabel": "Câu trả lời cho đoạn trích",
+      "replyPlaceholder": "Trả lời đoạn này… (Enter để thêm)",
+      "replyAdd": "Thêm vào tin nhắn (Enter)"
+    },
+    "composer": {
+      "label": "Yêu cầu cho Agent",
+      "placeholder": "Mô tả thay đổi bạn muốn cho spec…",
+      "hint": "để gửi",
+      "mentionLabel": "Gợi ý file",
+      "mentionTitle": "Spec",
+      "attachments": "Ảnh đính kèm",
+      "removeAttachment": "Bỏ {name}",
+      "replies": "Câu trả lời theo đoạn",
+      "removeReply": "Bỏ câu trả lời này"
+    },
+    "theme": {
+      "toggle": "Đổi giao diện sáng/tối",
+      "light": "Sáng",
+      "dark": "Tối",
+      "system": "Theo hệ thống"
+    },
+    "secret": {
+      "show": "Hiện",
+      "hide": "Ẩn",
+      "setPlaceholder": "Đã lưu. Nhập để thay",
+      "maskedPlaceholder": "{masked}. Nhập để thay"
+    },
+    "effort": {
+      "label": "Mức suy luận: {level}",
+      "title": "Mức suy luận",
+      "reset": "Mặc định",
+      "faster": "Nhanh hơn",
+      "smarter": "Kỹ hơn",
+      "DEFAULT": "Mặc định",
+      "LOW": "Thấp",
+      "MEDIUM": "Vừa",
+      "HIGH": "Cao",
+      "XHIGH": "Rất cao",
+      "MAX": "Tối đa",
+      "defaultHint": "Không đặt mức suy luận, CLI tự chọn theo cấu hình của nó.",
+      "hint": {
+        "LOW": "Trả lời nhanh, ít suy luận. Hợp với sửa nhỏ.",
+        "MEDIUM": "Cân bằng giữa tốc độ và chất lượng.",
+        "HIGH": "Suy luận kỹ hơn, chậm hơn và tốn nhiều hơn.",
+        "XHIGH": "Rất kỹ, dùng cho thay đổi lớn trên nhiều file.",
+        "MAX": "Mức cao nhất, chậm và tốn nhất."
+      },
+      "unsupported": "CLI này không hỗ trợ chọn mức suy luận"
+    },
+    "errorDetails": {
+      "toggle": "Chi tiết",
+      "code": "mã lỗi",
+      "context": "đang làm",
+      "at": "lúc",
+      "copy": "Sao chép chi tiết lỗi",
+      "copied": "Đã sao chép"
+    },
+    "donate": {
+      "open": "Ủng hộ dự án",
+      "title": "Ủng hộ dự án",
+      "description": "Quét mã QR bằng ứng dụng ngân hàng để ủng hộ Quick Edit NotebookLM. Cảm ơn bạn!",
+      "qrAlt": "Mã QR chuyển khoản {bank}",
+      "note": "Nội dung: {note}"
+    },
+    "cliModel": {
+      "title": "Model",
+      "label": "Model: {model}",
+      "default": "Mặc định",
+      "defaultHint": "CLI tự chọn",
+      "more": "Thêm model",
+      "loading": "Đang tải danh sách model…",
+      "customLabel": "Mã model khác",
+      "customPlaceholder": "Nhập mã model, nhấn Enter để dùng",
+      "unsupported": "CLI này không cho chọn model, sẽ chạy theo thiết lập của hồ sơ CLI"
+    },
+    "mermaid": {
+      "zoomIn": "Phóng to (Ctrl + lăn chuột)",
+      "zoomOut": "Thu nhỏ (Ctrl + lăn chuột)",
+      "zoomReset": "Về cỡ vừa khung"
+    }
+  }
+}

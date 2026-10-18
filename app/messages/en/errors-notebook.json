@@ -1,0 +1,15 @@
+{
+  "errors": {
+    "NOTEBOOK": {
+      "NOT_CONFIGURED": "This Workspace is not connected to NotebookLM. Set it up in Settings.",
+      "AUTH_REQUIRED": "Your NotebookLM session has expired or the cookie is wrong. Paste the cookie again in Settings, under Integrations, NotebookLM.",
+      "NOT_FOUND": "The notebook was not found or you do not have access to it.",
+      "COMMAND_FAILED": "The NotebookLM action did not succeed. Try again.",
+      "CREDENTIALS_MISSING": "NotebookLM is not connected. Paste the cookie in Settings, under Integrations, NotebookLM.",
+      "CHROME_NOT_FOUND": "Google Chrome or Chromium was not found on this computer. Install Chrome or paste the cookie manually.",
+      "LOGIN_NOT_FOUND": "The sign-in session has expired. Please sign in again.",
+      "LOGIN_TIMEOUT": "Sign-in did not finish within 5 minutes. Try again.",
+      "LOGIN_CLOSED": "The Chrome window was closed before sign-in finished. Try again."
+    }
+  }
+}

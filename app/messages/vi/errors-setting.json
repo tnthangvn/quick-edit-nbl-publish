@@ -1,0 +1,12 @@
+{
+  "errors": {
+    "SETTING": {
+      "CLI_PROFILE_NOT_FOUND": "Không tìm thấy hồ sơ CLI đang chọn.",
+      "CLI_PROFILE_DUPLICATE": "Mã của các hồ sơ CLI không được trùng nhau.",
+      "WORKSPACE_ID_MISMATCH": "Cấu hình này không thuộc Workspace hiện tại.",
+      "SECRET_NOT_SET": "Chưa nhập thông tin xác thực ({kind}).",
+      "SECRET_NOT_REVEALABLE": "Không thể xem lại thông tin này ({kind}).",
+      "PR_BRANCH_IS_BASE": "Nhánh tạo PR phải khác nhánh gốc."
+    }
+  }
+}

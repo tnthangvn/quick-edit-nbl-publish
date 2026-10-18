@@ -1,0 +1,3 @@
+{
+  "/api/workspaces/[workspaceId]/notebook/pull/preview/route": "app/api/workspaces/[workspaceId]/notebook/pull/preview/route.js"
+}

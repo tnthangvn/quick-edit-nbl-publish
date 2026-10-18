@@ -1,0 +1,24 @@
+{
+  "errors": {
+    "AGENT": {
+      "API_KEY_MISSING": "No API key has been set for this provider. Open Settings and go to Direct API to enter one.",
+      "LLM_AUTH_FAILED": "The provider did not accept the API key. Check the key in Settings.",
+      "MODEL_NOT_FOUND": "Model \"{model}\" was not found at the selected provider. Pick a different model.",
+      "LLM_RATE_LIMITED": "The provider is limiting requests for now. Try again in a few minutes.",
+      "LLM_UNREACHABLE": "Could not connect to the provider. Check your network or the server address.",
+      "LLM_REQUEST_FAILED": "The provider reported an error while handling the request. Try again.",
+      "INVALID_MESSAGES": "The conversation content is not valid. Start a new conversation.",
+      "CLI_PROFILE_NOT_FOUND": "The selected CLI profile was not found. Pick a different one.",
+      "CLI_NOT_INSTALLED": "The command \"{command}\" is not installed on this computer. Install it and try again.",
+      "CLI_SPEC_CONTEXT_REQUIRED": "This profile needs at least one Spec for the Agent to read. Pick a Spec and send again.",
+      "CLI_SPAWN_FAILED": "Could not start the CLI Agent. Check the command in Settings.",
+      "CLI_EXIT_NONZERO": "The CLI Agent stopped with an error (code {exitCode}). See the log for details.",
+      "CLI_TIMEOUT": "The CLI Agent ran too long and was stopped. Try again with a smaller request.",
+      "SANDBOX_FAILED": "Could not create a temporary copy to run the CLI Agent. Try again.",
+      "RUN_NOT_FOUND": "This CLI Agent run was not found.",
+      "RUN_ALREADY_ACTIVE": "This Workspace already has a CLI Agent run in progress. Wait for it or stop it first.",
+      "SESSION_NOT_FOUND": "This conversation was not found (it may have been deleted).",
+      "CLI_PERMISSION_DENIED": "The CLI Agent could not do anything because tool permissions were denied while running in the background. Choose the “Skip confirmations” permission level and send again."
+    }
+  }
+}

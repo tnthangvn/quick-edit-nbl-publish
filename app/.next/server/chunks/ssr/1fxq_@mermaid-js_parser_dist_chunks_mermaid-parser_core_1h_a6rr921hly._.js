@@ -1,0 +1,3 @@
+(()=>{"use strict";module.exports=[752509,a=>{var b=a.i(534738),c=class extends b.z6{static{(0,b._f)(this,"InfoTokenBuilder")}constructor(){super(["info","showInfo"])}},d={parser:{TokenBuilder:(0,b._f)(()=>new c,"TokenBuilder"),ValueConverter:(0,b._f)(()=>new b.Xl,"ValueConverter")}};function e(a=b.qh){let c=(0,b.s3)((0,b.ac)(a),b.Sg),f=(0,b.s3)((0,b.Ut)({shared:c}),b.cM,d);return c.ServiceRegistry.register(f),{shared:c,Info:f}}(0,b._f)(e,"createInfoServices"),a.s(["w",0,d,"n",0,e])},355893,a=>{var b=a.i(752509);a.i(534738),a.S([b,"createInfoServices,n"],355893)}]})();
+
+//# sourceMappingURL=1fxq_%40mermaid-js_parser_dist_chunks_mermaid-parser_core_1h_a6rr921hly._.js.map

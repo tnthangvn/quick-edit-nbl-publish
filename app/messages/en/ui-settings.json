@@ -1,0 +1,282 @@
+{
+  "settings": {
+    "title": "Settings",
+    "description": "Agent and connection settings shared by all projects.",
+    "descriptionWorkspace": "Shared settings and the settings of {name}.",
+    "tabs": {
+      "API": "Direct API",
+      "CLI": "CLI Agent",
+      "NOTEBOOK": "NotebookLM Sync",
+      "WORKSPACE": "Workspace & Storage",
+      "INTEGRATIONS": "Integrations",
+      "EXPORT_IMPORT": "Export/Import"
+    },
+    "loading": "Loading settings…",
+    "loadFailed": "Couldn't load settings",
+    "configMissingTitle": "Couldn't read the project settings",
+    "globalPath": "~/.spec-studio · shared settings",
+    "saved": "Settings saved",
+    "saveFailed": {
+      "settings": "Couldn't save Agent settings",
+      "config": "Couldn't save project settings",
+      "secret": "Couldn't save the NotebookLM cookie"
+    },
+    "forcePushFailed": "Force Push failed",
+    "forcePush": {
+      "title": "Overwrite the remote branch?",
+      "body": "The current content (NotebookLM or this machine takes priority) will be pushed over branch “{branch}”, replacing every commit on the remote. This cannot be undone.",
+      "confirm": "Force Push"
+    },
+    "api": {
+      "provider": "Provider",
+      "providers": {
+        "GOOGLE": "Google Gemini",
+        "ANTHROPIC": "Anthropic",
+        "OPENAI": "OpenAI",
+        "DEEPSEEK": "DeepSeek",
+        "OLLAMA": "Ollama / your own server"
+      },
+      "apiKey": "API Key",
+      "apiKeyPlaceholder": "Paste API key…",
+      "apiKeyHint": "The API key is encrypted before it is stored and never sent anywhere else.",
+      "apiKeyHintOllama": "Ollama running on this machine usually doesn't need an API key.",
+      "removeKey": "Remove Key",
+      "keyWillBeRemoved": "The saved key will be removed when you click Save.",
+      "test": "Test",
+      "testing": "Testing…",
+      "testOk": "OK",
+      "testFailed": "Connection failed. Check the API key, model name and server address.",
+      "testResult": "Connected · {ms} ms",
+      "model": "Model name",
+      "modelHint": "Pick one or type another model name.",
+      "temperature": "Creativity",
+      "baseUrl": "Server address",
+      "baseUrlHint": "Leave empty to use the provider's default address.",
+      "baseUrlHintOllama": "Address of Ollama or an OpenAI-compatible server.",
+      "systemPrompt": "Agent instructions",
+      "systemPromptHint": "The Agent's role and rules for writing specs."
+    },
+    "cli": {
+      "activeCli": "CLI in use",
+      "activeCliHint": "The CLI always runs in the project's working folder.",
+      "detectAgain": "Detect CLIs again",
+      "kinds": {
+        "CLAUDE_CODE": "Anthropic",
+        "CODEX": "OpenAI · ChatGPT",
+        "ANTIGRAVITY": "Google · agy",
+        "CUSTOM": "Custom script"
+      },
+      "detect": {
+        "found": "Found",
+        "notFound": "Not found",
+        "loggedOut": "Not signed in",
+        "custom": "Custom command"
+      },
+      "binaryPath": "Program path",
+      "binaryPathHint": "Path to the program, or the name of a command already on this machine.",
+      "detectedAt": "Found at",
+      "useDetected": "Use This Path",
+      "args": "Default arguments",
+      "argsHint": "One argument per line. '{prompt}' is the request plus the spec list, '{spec}' is the open file.",
+      "outputFormat": "Output format",
+      "outputFormatHint": "Spec Studio reads the CLI's output in this format to show logs and proposed file edits.",
+      "formats": {
+        "STREAM_JSON": "stream-json",
+        "JSONL": "jsonl",
+        "TEXT": "text"
+      },
+      "workspacePath": "Workspace folder",
+      "workspacePathHint": "Root folder of the .md files (change it in the Workspace & Storage tab).",
+      "workspacePathNone": "Open Settings from a project to see its working folder.",
+      "streamStdout": "Show live log",
+      "streamStdoutHint": "Show the CLI's log in the chat as it runs."
+    },
+    "notebook": {
+      "notebookId": "Notebook ID",
+      "notebookIdHint": "Paste the notebook URL or ID. The ID is picked out automatically.",
+      "check": "Check",
+      "checkOk": "Connected to “{title}” · {count, plural, one {# source} other {# sources}}",
+      "checkFailed": "Couldn't access the notebook.",
+      "strategy": "Sync method",
+      "strategies": {
+        "DRIVE_SYNC": {
+          "title": "Through Google Drive",
+          "description": "Writes specs as Google Docs, then refreshes the source. Reliable, recommended."
+        },
+        "RPC": {
+          "title": "Direct with cookie",
+          "description": "Deletes the old source and uploads the new one. Fast, but fails when the cookie expires."
+        }
+      },
+      "driveFolder": "Drive folder ID",
+      "driveFolderHint": "The Drive folder that holds the Google Doc copies of the specs.",
+      "cookie": "Separate NotebookLM cookie (optional)",
+      "cookieHint": "Leave empty to use the shared NotebookLM connection in Settings › Integrations. Fill it in only if this project uses a different Google account.",
+      "autoSyncOnApprove": {
+        "label": "Sync to NotebookLM automatically after approving a change",
+        "hint": "Runs right after the file is saved."
+      },
+      "confirmBeforeSync": {
+        "label": "Ask for confirmation before syncing",
+        "hint": "Asks before every upload to NotebookLM."
+      }
+    },
+    "workspace": {
+      "name": "Workspace name",
+      "specsDir": "Spec folder",
+      "path": "Working folder on this machine",
+      "pathHint": "View only. If the folder was moved, use Locate on the Projects screen.",
+      "copyPath": "Copy path",
+      "copied": "Copied",
+      "storageType": "Storage",
+      "storageTypeHint": "Changing the storage re-runs the same checks as when the project was created.",
+      "dangerTitle": "Remove Workspace from the list",
+      "dangerDescription": "Only removes it from the Projects screen. No files are deleted.",
+      "remove": "Remove"
+    },
+    "integrations": {
+      "connectorsTitle": "Git connections",
+      "connectorsDescription": "Reused by every project: CLI, MCP server, Personal Access Token or SSH key.",
+      "addConnector": "Add Connection",
+      "loading": "Loading connections…",
+      "loadFailed": "Couldn't load connections",
+      "emptyTitle": "No connections yet",
+      "emptyDescription": "Add a connection, or use a detected CLI below to pick repos from a list.",
+      "checkOk": "Connection is working",
+      "checkNeedsLogin": "Connection needs to sign in again",
+      "runLogin": "Run {command} in a terminal, then check again.",
+      "checkStatus": {
+        "CONNECTED": "Connection is working",
+        "NEEDS_LOGIN": "Connection needs to sign in again",
+        "CLI_NOT_FOUND": "CLI not found on this machine",
+        "ERROR": "The connection check failed with an error"
+      },
+      "checkFailed": "Connection check failed",
+      "removed": "Deleted connection {name}",
+      "removeTitle": "Delete connection?",
+      "removeDescription": "Delete {name} and its saved secrets. Projects using it need to pick another connection.",
+      "tools": "{count, plural, =0 {Tools · none enabled for the Agent} other {Tools · # enabled for the Agent}}",
+      "toolsLoading": "Loading tools…",
+      "toolsEmpty": "This MCP server has no tools.",
+      "detectTitle": "CLIs found on this machine",
+      "detectDescription": "Looks for gh, glab and tea on this machine: version and signed-in account.",
+      "detectAgain": "Detect again",
+      "detecting": "Looking for CLIs…",
+      "cliMissing": "Not found on this machine",
+      "cliLoggedOut": "Not signed in · run {command}",
+      "alreadyAdded": "Added",
+      "add": "Add",
+      "addAnyway": "Add Anyway",
+      "added": "Added connection {name}",
+      "google": {
+        "title": "Google Drive",
+        "description": "Sign in once. Used by Workspaces stored on Drive and by NotebookLM sync through Drive.",
+        "checking": "Checking Google sign-in…",
+        "connected": "Drive access was granted through OAuth and is shared by every project.",
+        "notConnected": "Not signed in to Google.",
+        "notConfigured": "Google sign-in isn't set up on the server. Please contact your administrator.",
+        "badgeConnected": "Connected",
+        "waiting": "Waiting for sign-in…",
+        "signIn": "Sign In With Google",
+        "signOut": "Sign Out"
+      },
+      "notebooklm": {
+        "title": "NotebookLM",
+        "description": "Connect with your Google sign-in. Spec Studio works with NotebookLM directly to add, sync and replace sources, with no CLI to install.",
+        "checking": "Checking…",
+        "notConnected": "Not connected.",
+        "connected": "Connected",
+        "check": "Check",
+        "replace": "Sign In Again",
+        "disconnect": "Disconnect",
+        "step1": "Open notebooklm.google.com (signed in), press F12 and choose the Network tab.",
+        "step2": "Reload the page, pick any request to notebooklm.google.com, then open Headers and Request Headers.",
+        "step3": "Copy the whole Cookie value and paste it here.",
+        "cookieLabel": "NotebookLM cookie",
+        "warning": "The cookie is your Google sign-in. It is stored (encrypted) on this machine only and sent nowhere except notebooklm.google.com. It expires after a few weeks; paste it again then.",
+        "cancel": "Cancel",
+        "save": "Save & Check",
+        "saving": "Checking…",
+        "saved": "NotebookLM connected · {count} notebooks",
+        "saveFailed": "Couldn't use this cookie",
+        "checkOk": "NotebookLM is working · {count} notebooks",
+        "checkFailed": "Couldn't connect to NotebookLM",
+        "removed": "NotebookLM disconnected",
+        "loginChrome": "Sign In with Chrome",
+        "reloginChrome": "Sign In Again with Chrome",
+        "loginChromeHint": "Opens Chrome with Spec Studio's own profile. Close the window after you sign in. Next time you usually won't need to sign in again.",
+        "waitingLogin": "Sign in to Google in the Chrome window that just opened, then close it so Spec Studio can pick up the sign-in.",
+        "loginFailed": "NotebookLM sign-in didn't finish",
+        "manualTitle": "Or paste the cookie manually"
+      }
+    },
+    "connectorForm": {
+      "createTitle": "Add connection",
+      "editTitle": "Edit {name}",
+      "description": "How Spec Studio signs in to your Git host to list repos and branches and to create PRs/MRs.",
+      "type": "Connection type",
+      "types": {
+        "CLI": {
+          "title": "CLI on this machine",
+          "description": "gh, glab, tea… No token is stored in Spec Studio."
+        },
+        "MCP": {
+          "title": "MCP server",
+          "description": "Runs from a command on this machine or connects through a URL."
+        },
+        "TOKEN": {
+          "title": "Personal Access Token",
+          "description": "The token is encrypted before it is stored."
+        },
+        "SSH": {
+          "title": "SSH key",
+          "description": "Can only clone, pull and push."
+        }
+      },
+      "name": "Name",
+      "namePlaceholder": "Personal GitHub",
+      "provider": "Provider",
+      "host": "Server address",
+      "hostHint": "Leave empty to use the provider's default address.",
+      "cliCommand": "CLI command",
+      "cliCommandHint": "Leave empty to use the provider's command (gh, glab, tea).",
+      "mcpCommand": "Command",
+      "mcpCommandHint": "Command that starts the MCP server on this machine.",
+      "transport": "Connection mode",
+      "transports": {
+        "STDIO": "Local command",
+        "HTTP": "Through URL"
+      },
+      "url": "URL",
+      "headers": "Headers",
+      "headersHint": "One header per line, as Name: value.",
+      "args": "Arguments",
+      "argsHint": "One argument per line.",
+      "env": "Environment variables",
+      "envHint": "One KEY=VALUE per line (nothing secret).",
+      "secrets": "Secret variables / headers",
+      "secretsHint": "Enter only, never shown again. Stored encrypted. One KEY=VALUE per line.",
+      "secretsHintSet": "Saved: {keys}. Enter again to replace, leave empty to keep.",
+      "token": "Token",
+      "tokenHint": "Enter only, never shown again. Grant the minimum permissions: read/write repos and create PRs.",
+      "sshHint": "Uses the SSH keys already on this machine. The repo URL is entered in each project.",
+      "create": "Add Connection",
+      "created": "Added connection {name}",
+      "updated": "Saved connection {name}"
+    },
+    "exportImport": {
+      "title": "Export / Import settings",
+      "description": "Export your basic settings (Direct API, CLI Agent, connections) to use on another machine. The file has no API keys, tokens or accounts, so on the new machine you need to sign in or enter them again.",
+      "exportButton": "Export Settings",
+      "exportedFileName": "spec-studio-settings.json",
+      "importButton": "Import Settings",
+      "invalidFile": "This isn't a Spec Studio settings file.",
+      "importConfirmTitle": "Import settings?",
+      "importConfirmDescription": "Direct API and CLI Agent settings will be fully replaced. Connections with the same name are skipped, and existing connections are never removed.",
+      "importSuccess": "Settings imported. Added {imported} new connection(s).",
+      "importSkipped": "Skipped {count} connection(s) with the same name: {names}.",
+      "importFailed": "Import failed",
+      "importSummary": "{count, plural, one {# connection} other {# connections}} · exported {date}"
+    }
+  }
+}

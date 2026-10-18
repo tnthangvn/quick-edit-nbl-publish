@@ -1,0 +1,258 @@
+{
+  "workbench": {
+    "toast": {
+      "saveFailed": "Không lưu được {file}",
+      "openFailed": "Không mở được Workspace",
+      "settingsFailed": "Không lưu được cài đặt Agent"
+    },
+    "storage": {
+      "label": "Trạng thái lưu trữ",
+      "pending": "{count, plural, =0 {Đã đồng bộ} other {# thay đổi}}",
+      "gitSummary": "Nhánh {branch} · {uncommitted} thay đổi chưa Commit · {ahead} Commit chưa Push · {behind} Commit chưa Pull",
+      "driveSummary": "{count, plural, =0 {Không có file chờ tải lên} other {# file chờ tải lên Google Drive}}",
+      "pull": "Pull",
+      "push": "Push",
+      "pushed": "{count, plural, other {Đã Push # file}}",
+      "nothingToPush": "Không có gì để Push",
+      "openPr": "Mở PR #{number}",
+      "pullFailed": "Pull không thành công",
+      "pushFailed": "Push không thành công",
+      "forcePush": "Push ghi đè"
+    },
+    "sidebar": {
+      "label": "Danh sách spec",
+      "title": "Specs",
+      "expand": "Mở thanh bên",
+      "count": "{count, plural, other {# spec}}",
+      "selectAll": "Chọn tất cả spec làm ngữ cảnh",
+      "inContext": "{count} trong ngữ cảnh",
+      "newSpec": "Spec mới",
+      "loadFailed": "Không tải được danh sách spec",
+      "retry": "Thử lại",
+      "emptyTitle": "Chưa có spec nào",
+      "emptyDescription": "Hãy tạo file .md đầu tiên trong {dir}.",
+      "forceSyncFailed": "Không đồng bộ lại được {file}"
+    },
+    "dialogs": {
+      "new": {
+        "title": "Spec mới",
+        "description": "Tạo file Markdown trong thư mục spec của Workspace.",
+        "fileLabel": "Tên file",
+        "fileHint": "Đường dẫn tương đối, ví dụ overview.md hoặc ui/header.md.",
+        "submit": "Tạo",
+        "created": "Đã tạo {file}"
+      },
+      "rename": {
+        "title": "Đổi tên spec",
+        "description": "Đổi tên {file} trong thư mục spec trên máy.",
+        "fileLabel": "Tên mới",
+        "renamed": "Đã đổi {from} thành {to}"
+      },
+      "delete": {
+        "title": "Xoá {file}?",
+        "description": "File sẽ bị xoá khỏi thư mục spec trên máy. Nguồn cùng tên trên NotebookLM cũng được gỡ như khi Duyệt & Lưu, tuỳ theo cách đồng bộ của Workspace. Git và Google Drive không thay đổi.",
+        "deleted": "Đã xoá {file}",
+        "failed": "Không xoá được {file}"
+      }
+    },
+    "editor": {
+      "label": "Workspace",
+      "loading": "Đang tải trình soạn thảo…",
+      "monacoFailed": "Không tải được trình soạn thảo",
+      "noSpecsTitle": "Bắt đầu với spec đầu tiên",
+      "noSpecsDescription": "Workspace chưa có file .md nào. Hãy tạo spec mới rồi sửa cùng Agent.",
+      "newSpec": "Spec mới",
+      "noSelectionTitle": "Chọn một spec",
+      "noSelectionDescription": "Bấm vào một file bên trái để mở. Đánh dấu ô chọn để đưa file vào ngữ cảnh của Agent.",
+      "pendingProposals": "{count, plural, other {# đề xuất chờ duyệt}}",
+      "loadFailed": "Không mở được {file}",
+      "editorLabel": "Nội dung {file}",
+      "markdown": "Markdown",
+      "draftHint": "Bản nháp được giữ tạm trên máy, chưa ghi vào file",
+      "approveSave": "Duyệt & Lưu",
+      "saving": "Đang lưu…",
+      "saved": "Đã lưu",
+      "viewMode": "Chế độ xem",
+      "preview": "Xem trước",
+      "source": "Sửa",
+      "previewLabel": "Xem trước {file}",
+      "linkNotFound": "Workspace không có file {file}",
+      "diff": "Diff",
+      "diffNoChanges": "Chưa có thay đổi so với file đã lưu",
+      "diffLabel": "So sánh bản nháp {file}",
+      "splitResize": "Kéo để đổi độ rộng vùng soạn thảo và xem trước",
+      "diffTitle": "Thay đổi so với file đã lưu",
+      "externalConflict": "{file} vừa được sửa bên ngoài ứng dụng trong khi bạn có bản nháp chưa lưu.",
+      "externalReload": "Tải bản mới (bỏ bản nháp)",
+      "externalKeepDraft": "Giữ bản nháp"
+    },
+    "diff": {
+      "label": "Duyệt thay đổi của Agent",
+      "toolbar": "Duyệt thay đổi",
+      "title": "Agent đề xuất sửa <code>{file}</code>",
+      "titleNew": "Agent đề xuất tạo <code>{file}</code>",
+      "stats": "Thêm {added} dòng, xoá {removed} dòng",
+      "queue": "{index}/{total}",
+      "original": "Bản gốc",
+      "proposed": "Bản đề xuất",
+      "editorLabel": "So sánh thay đổi của {file}",
+      "reject": "Từ chối",
+      "approveSave": "Duyệt & Lưu",
+      "saving": "Đang lưu…",
+      "rejected": "Đã bỏ đề xuất cho {file}",
+      "diff": "Diff",
+      "previewOf": "Xem trước · {file}",
+      "editable": "có thể sửa trực tiếp",
+      "dismissFailed": "Chưa ghi nhận được việc giữ bản trên máy cho {file}. Huy hiệu Pull có thể báo lại.",
+      "titleNotebook": "NotebookLM có bản mới hơn của <code>{file}</code>",
+      "titleNotebookNew": "NotebookLM có file mới <code>{file}</code>",
+      "titleExternal": "<code>{file}</code> đã được sửa bên ngoài ứng dụng, chưa đồng bộ",
+      "titleExternalNew": "<code>{file}</code> được tạo bên ngoài ứng dụng, chưa đồng bộ",
+      "rejectedExternal": "Giữ nguyên {file}, chưa đồng bộ"
+    },
+    "sync": {
+      "label": "Tiến trình đồng bộ",
+      "running": "Đang đồng bộ <code>{file}</code>",
+      "done": "Đã đồng bộ <code>{file}</code>",
+      "withErrors": "Đã đồng bộ {done}/{total} nơi · {errors} lỗi",
+      "progress": "{done}/{total} nơi",
+      "waiting": "Đang chờ quá trình đồng bộ bắt đầu…",
+      "gitPullRequest": "Git · Pull Request",
+      "collapse": "Thu gọn",
+      "expand": "Mở rộng",
+      "close": "Đóng",
+      "retryFailed": "Không thử lại được mục này"
+    },
+    "toolbar": {
+      "model": "Model",
+      "modelPlaceholder": "Chọn model",
+      "profile": "Hồ sơ CLI",
+      "profilePlaceholder": "Chọn hồ sơ CLI",
+      "context": "{count, plural, other {# spec trong ngữ cảnh}}",
+      "settings": "Cài đặt Agent",
+      "newSession": "Phiên mới",
+      "history": "Lịch sử",
+      "historyLoading": "Đang tải…",
+      "historyEmpty": "Chưa có phiên nào",
+      "deleteSession": "Xoá phiên hiện tại",
+      "deleteSessionFailed": "Không xoá được phiên trò chuyện",
+      "permissionLabel": "Quyền của CLI",
+      "permission": {
+        "DEFAULT": "Theo hồ sơ",
+        "PLAN": "Chỉ lập kế hoạch",
+        "ACCEPT_EDITS": "Tự động sửa file",
+        "BYPASS": "Bỏ qua xác nhận"
+      },
+      "permissionHint": {
+        "DEFAULT": "Dùng thiết lập có sẵn trong hồ sơ CLI",
+        "PLAN": "Chỉ đọc và lập kế hoạch",
+        "ACCEPT_EDITS": "Tự sửa file, hỏi trước khi chạy lệnh",
+        "BYPASS": "Không hỏi xác nhận nào"
+      },
+      "dock": "Vị trí khung trò chuyện",
+      "dockOption": {
+        "BOTTOM": "Dưới vùng soạn thảo",
+        "LEFT": "Bên trái",
+        "RIGHT": "Bên phải"
+      },
+      "resizeChat": "Kéo để đổi chiều rộng khung trò chuyện",
+      "permissionUnsupported": "CLI này không hỗ trợ khi chạy nền",
+      "permissionNotAvailable": "CLI này không có mức quyền, sẽ chạy theo thiết lập của hồ sơ",
+      "effortInModel": "Mức suy luận đã nằm trong model đang chọn"
+    },
+    "chat": {
+      "hint": "Đánh dấu các spec liên quan ở bên trái rồi mô tả thay đổi bạn muốn.",
+      "thinking": "Agent đang xử lý",
+      "cliTitle": "{profile} · {stream}",
+      "tool": {
+        "running": "Đang chạy",
+        "drafting": "Đang soạn",
+        "done": "Xong",
+        "error": "Lỗi",
+        "noChanges": "Không có thay đổi",
+        "pendingReview": "Chờ duyệt",
+        "reviewed": "Đã xử lý",
+        "openDiff": "Mở Diff"
+      },
+      "untitled": "Phiên chưa đặt tên",
+      "record": {
+        "working": "Đang làm việc",
+        "thinking": "Đang suy nghĩ",
+        "DONE": "Đã làm việc trong {duration}",
+        "DONEShort": "Đã làm xong",
+        "FAILED": "Dừng do lỗi sau {duration}",
+        "FAILEDShort": "Dừng do lỗi",
+        "STOPPED": "Đã dừng sau {duration}",
+        "STOPPEDShort": "Đã dừng",
+        "steps": "{count, plural, other {# bước}}",
+        "thought": "Suy nghĩ",
+        "tokens": "{input} vào · {output} ra",
+        "turns": "{count, plural, other {# lượt}}",
+        "verb": {
+          "read": "Đọc",
+          "edit": "Sửa",
+          "write": "Tạo",
+          "search": "Tìm",
+          "exec": "Chạy",
+          "web": "Web",
+          "plan": "Kế hoạch",
+          "task": "Agent phụ",
+          "other": "Công cụ"
+        }
+      }
+    },
+    "composer": {
+      "placeholderApi": "Yêu cầu Agent sửa spec…",
+      "placeholderCli": "Yêu cầu cho CLI Agent…",
+      "noContext": "Chưa chọn spec làm ngữ cảnh",
+      "contextLabel": "{count, plural, other {# spec trong ngữ cảnh}}",
+      "cliStartFailed": "Không chạy được CLI Agent",
+      "cliStopFailed": "Không dừng được CLI Agent",
+      "sessionFailed": "Không tạo được phiên trò chuyện",
+      "imageType": "Chỉ dán được ảnh PNG, JPEG, WebP hoặc GIF.",
+      "imageTooLarge": "Ảnh lớn hơn {max} MB.",
+      "imageLimit": "Tối đa {max} ảnh mỗi tin nhắn."
+    },
+    "syncAll": {
+      "label": "Đồng bộ",
+      "started": "Đã bắt đầu đồng bộ {count} file lên {targets}",
+      "failed": "Không đồng bộ được {file}",
+      "selected": "Đồng bộ {count} file đang chọn lên {targets}",
+      "noneSelected": "Đánh dấu file ở thanh bên để chọn file cần đồng bộ",
+      "confirmTitle": "Duyệt {count} đề xuất trước khi đồng bộ?",
+      "confirmDescription": "Các file dưới đây còn đề xuất của Agent chưa được duyệt. Duyệt tất cả & Đồng bộ sẽ lưu nội dung đề xuất (phần bạn đã sửa tay trong Diff không được tính), rồi đồng bộ cả {count} file đang chọn lên {targets}.",
+      "confirmAction": "Duyệt tất cả & Đồng bộ"
+    },
+    "loading": {
+      "OPENING": {
+        "title": "Đang mở Workspace…",
+        "description": "Đang đọc danh sách spec và đồng bộ khi mở."
+      },
+      "CHECKING_NOTEBOOK": {
+        "title": "Đang kiểm tra NotebookLM…",
+        "description": "Đang so file trên NotebookLM với bản trên máy. Tạm khoá việc sửa để không bị ghi đè."
+      }
+    },
+    "notebookPull": {
+      "label": "Pull",
+      "badge": "{count} file trên NotebookLM mới hơn. Bấm Pull để duyệt",
+      "upToDate": "Không có thay đổi mới trên NotebookLM",
+      "failed": "Không Pull được từ NotebookLM",
+      "dialogTitle": "Pull từ NotebookLM",
+      "dialogDescription": "{count} file trên NotebookLM khác bản trên máy. Chọn file muốn lấy về: Duyệt sẽ ghi bản NotebookLM vào file, Từ chối sẽ giữ bản trên máy.",
+      "loading": "Đang so NotebookLM với file trên máy…",
+      "checkFailed": "Không kiểm tra được NotebookLM",
+      "selectAll": "Chọn tất cả",
+      "selectedCount": "Đã chọn {selected}/{total} file",
+      "listLabel": "File khác NotebookLM",
+      "status": {
+        "NEW": "Mới",
+        "CHANGED": "Đã đổi"
+      },
+      "rejectAll": "Từ chối tất cả",
+      "approveAll": "Duyệt tất cả",
+      "approveSelected": "Duyệt ({count})",
+      "applied": "Đã lấy {approved} file từ NotebookLM, giữ bản trên máy cho {rejected} file"
+    }
+  }
+}

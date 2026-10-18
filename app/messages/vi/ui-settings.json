@@ -1,0 +1,282 @@
+{
+  "settings": {
+    "title": "Cài đặt",
+    "description": "Cấu hình Agent và kết nối dùng chung cho mọi dự án.",
+    "descriptionWorkspace": "Cấu hình chung và của dự án {name}.",
+    "tabs": {
+      "API": "API trực tiếp",
+      "CLI": "Agent chạy bằng CLI",
+      "NOTEBOOK": "Đồng bộ NotebookLM",
+      "WORKSPACE": "Workspace và lưu trữ",
+      "INTEGRATIONS": "Tích hợp",
+      "EXPORT_IMPORT": "Xuất/Nhập"
+    },
+    "loading": "Đang tải cài đặt…",
+    "loadFailed": "Không tải được cài đặt",
+    "configMissingTitle": "Không đọc được cài đặt của dự án",
+    "globalPath": "~/.spec-studio · cài đặt chung",
+    "saved": "Đã lưu cài đặt",
+    "saveFailed": {
+      "settings": "Không lưu được cài đặt Agent",
+      "config": "Không lưu được cài đặt của dự án",
+      "secret": "Không lưu được cookie NotebookLM"
+    },
+    "forcePushFailed": "Push ghi đè thất bại",
+    "forcePush": {
+      "title": "Ghi đè nhánh trên remote?",
+      "body": "Nội dung hiện tại (ưu tiên bản trên NotebookLM hoặc trên máy) sẽ được Push ghi đè lên nhánh “{branch}”, thay thế mọi commit đang có trên remote. Không hoàn tác được.",
+      "confirm": "Push ghi đè"
+    },
+    "api": {
+      "provider": "Nhà cung cấp",
+      "providers": {
+        "GOOGLE": "Google Gemini",
+        "ANTHROPIC": "Anthropic",
+        "OPENAI": "OpenAI",
+        "DEEPSEEK": "DeepSeek",
+        "OLLAMA": "Ollama / địa chỉ máy chủ riêng"
+      },
+      "apiKey": "API Key",
+      "apiKeyPlaceholder": "Dán API key…",
+      "apiKeyHint": "API key được mã hoá trước khi lưu và không gửi đi đâu khác.",
+      "apiKeyHintOllama": "Ollama chạy trên máy thường không cần API key.",
+      "removeKey": "Xoá key",
+      "keyWillBeRemoved": "Key đã lưu sẽ bị xoá khi bạn bấm Lưu.",
+      "test": "Kiểm tra",
+      "testing": "Đang kiểm tra…",
+      "testOk": "Tốt",
+      "testFailed": "Kết nối không thành công. Hãy kiểm tra API key, tên model và địa chỉ máy chủ.",
+      "testResult": "Kết nối thành công · {ms} ms",
+      "model": "Tên model",
+      "modelHint": "Chọn sẵn hoặc gõ tên model khác.",
+      "temperature": "Độ sáng tạo",
+      "baseUrl": "Địa chỉ máy chủ",
+      "baseUrlHint": "Bỏ trống để dùng địa chỉ mặc định của nhà cung cấp.",
+      "baseUrlHintOllama": "Địa chỉ Ollama hoặc máy chủ tương thích OpenAI.",
+      "systemPrompt": "Chỉ dẫn mẫu cho Agent",
+      "systemPromptHint": "Vai trò và quy tắc viết Spec của Agent."
+    },
+    "cli": {
+      "activeCli": "CLI đang dùng",
+      "activeCliHint": "CLI luôn chạy trong thư mục làm việc của dự án.",
+      "detectAgain": "Dò lại CLI",
+      "kinds": {
+        "CLAUDE_CODE": "Anthropic",
+        "CODEX": "OpenAI · ChatGPT",
+        "ANTIGRAVITY": "Google · agy",
+        "CUSTOM": "Script tuỳ chỉnh"
+      },
+      "detect": {
+        "found": "Đã tìm thấy",
+        "notFound": "Không tìm thấy",
+        "loggedOut": "Chưa đăng nhập",
+        "custom": "Lệnh tuỳ chỉnh"
+      },
+      "binaryPath": "Đường dẫn chương trình",
+      "binaryPathHint": "Đường dẫn đến chương trình, hoặc tên lệnh đã có sẵn trên máy.",
+      "detectedAt": "Tìm thấy tại",
+      "useDetected": "Dùng đường dẫn này",
+      "args": "Tham số mặc định",
+      "argsHint": "Mỗi dòng một tham số. '{prompt}' là yêu cầu kèm danh sách Spec, '{spec}' là file đang mở.",
+      "outputFormat": "Định dạng kết quả",
+      "outputFormatHint": "Spec Studio đọc kết quả của CLI theo định dạng này để hiện nhật ký và đề xuất sửa file.",
+      "formats": {
+        "STREAM_JSON": "stream-json",
+        "JSONL": "jsonl",
+        "TEXT": "text"
+      },
+      "workspacePath": "Thư mục Workspace",
+      "workspacePathHint": "Thư mục gốc chứa các file .md (đổi ở tab Workspace và lưu trữ).",
+      "workspacePathNone": "Mở Cài đặt từ một dự án để xem thư mục làm việc.",
+      "streamStdout": "Hiện nhật ký khi chạy",
+      "streamStdoutHint": "Hiện nhật ký của CLI ngay trong khung chat."
+    },
+    "notebook": {
+      "notebookId": "Notebook ID",
+      "notebookIdHint": "Dán URL hoặc ID của notebook, ID sẽ được tự tách ra.",
+      "check": "Kiểm tra",
+      "checkOk": "Đã kết nối “{title}” · {count, plural, other {# nguồn}}",
+      "checkFailed": "Không truy cập được notebook.",
+      "strategy": "Cách đồng bộ",
+      "strategies": {
+        "DRIVE_SYNC": {
+          "title": "Qua Google Drive",
+          "description": "Ghi Spec thành Google Doc rồi làm mới nguồn. Ổn định, nên dùng."
+        },
+        "RPC": {
+          "title": "Dùng cookie trực tiếp",
+          "description": "Xoá nguồn cũ rồi tải lại bản mới. Nhanh, nhưng sẽ lỗi khi cookie hết hạn."
+        }
+      },
+      "driveFolder": "ID thư mục Drive",
+      "driveFolderHint": "Thư mục Drive chứa bản Google Doc của Spec.",
+      "cookie": "Cookie NotebookLM riêng (tuỳ chọn)",
+      "cookieHint": "Bỏ trống để dùng kết nối NotebookLM chung ở Cài đặt › Tích hợp. Chỉ điền khi dự án này dùng tài khoản Google khác.",
+      "autoSyncOnApprove": {
+        "label": "Tự động đồng bộ lên NotebookLM sau khi Duyệt thay đổi",
+        "hint": "Chạy ngay sau khi file được ghi."
+      },
+      "confirmBeforeSync": {
+        "label": "Hỏi xác nhận trước khi đồng bộ",
+        "hint": "Hỏi lại trước mỗi lần đẩy lên NotebookLM."
+      }
+    },
+    "workspace": {
+      "name": "Tên Workspace",
+      "specsDir": "Thư mục Spec",
+      "path": "Thư mục làm việc trên máy",
+      "pathHint": "Chỉ xem. Nếu thư mục đã được di chuyển, dùng Tìm lại ở màn Dự án.",
+      "copyPath": "Sao chép đường dẫn",
+      "copied": "Đã sao chép",
+      "storageType": "Nơi lưu trữ",
+      "storageTypeHint": "Đổi nơi lưu trữ sẽ chạy lại các bước kiểm tra như khi tạo dự án.",
+      "dangerTitle": "Gỡ Workspace khỏi danh sách",
+      "dangerDescription": "Chỉ gỡ khỏi màn Dự án, không xoá file.",
+      "remove": "Gỡ"
+    },
+    "integrations": {
+      "connectorsTitle": "Kết nối Git",
+      "connectorsDescription": "Dùng lại cho mọi dự án: CLI, MCP server, Personal Access Token hoặc SSH key.",
+      "addConnector": "Thêm kết nối",
+      "loading": "Đang tải danh sách kết nối…",
+      "loadFailed": "Không tải được danh sách kết nối",
+      "emptyTitle": "Chưa có kết nối nào",
+      "emptyDescription": "Thêm một kết nối, hoặc dùng CLI được dò thấy bên dưới để chọn repo từ danh sách.",
+      "checkOk": "Kết nối đang hoạt động",
+      "checkNeedsLogin": "Kết nối cần đăng nhập lại",
+      "runLogin": "Chạy {command} trong terminal rồi kiểm tra lại.",
+      "checkStatus": {
+        "CONNECTED": "Kết nối đang hoạt động",
+        "NEEDS_LOGIN": "Kết nối cần đăng nhập lại",
+        "CLI_NOT_FOUND": "Không tìm thấy CLI trên máy",
+        "ERROR": "Kiểm tra kết nối bị lỗi"
+      },
+      "checkFailed": "Kiểm tra kết nối thất bại",
+      "removed": "Đã xoá kết nối {name}",
+      "removeTitle": "Xoá kết nối?",
+      "removeDescription": "Xoá {name} cùng thông tin bí mật đã lưu. Dự án đang dùng kết nối này cần chọn kết nối khác.",
+      "tools": "{count, plural, =0 {Công cụ · chưa bật cho Agent} other {Công cụ · # đang bật cho Agent}}",
+      "toolsLoading": "Đang lấy danh sách công cụ…",
+      "toolsEmpty": "MCP server này không có công cụ nào.",
+      "detectTitle": "CLI tìm thấy trên máy",
+      "detectDescription": "Tìm gh, glab, tea trên máy: phiên bản và tài khoản đang đăng nhập.",
+      "detectAgain": "Dò lại",
+      "detecting": "Đang dò CLI…",
+      "cliMissing": "Không tìm thấy trên máy",
+      "cliLoggedOut": "Chưa đăng nhập · chạy {command}",
+      "alreadyAdded": "Đã thêm",
+      "add": "Thêm",
+      "addAnyway": "Vẫn thêm",
+      "added": "Đã thêm kết nối {name}",
+      "google": {
+        "title": "Google Drive",
+        "description": "Đăng nhập một lần, dùng chung cho Workspace lưu trên Drive và đồng bộ NotebookLM qua Drive.",
+        "checking": "Đang kiểm tra đăng nhập Google…",
+        "connected": "Đã cấp quyền truy cập Drive qua OAuth, dùng chung cho mọi dự án.",
+        "notConnected": "Chưa đăng nhập Google.",
+        "notConfigured": "Máy chủ chưa được cấu hình đăng nhập Google. Hãy liên hệ người quản trị.",
+        "badgeConnected": "Đã kết nối",
+        "waiting": "Đang chờ đăng nhập…",
+        "signIn": "Đăng nhập Google",
+        "signOut": "Đăng xuất"
+      },
+      "notebooklm": {
+        "title": "NotebookLM",
+        "description": "Kết nối bằng phiên đăng nhập Google của bạn. Spec Studio làm việc trực tiếp với NotebookLM để thêm, đồng bộ và thay nguồn, không cần cài CLI.",
+        "checking": "Đang kiểm tra…",
+        "notConnected": "Chưa kết nối.",
+        "connected": "Đã kết nối",
+        "check": "Kiểm tra",
+        "replace": "Đăng nhập lại",
+        "disconnect": "Ngắt kết nối",
+        "step1": "Mở notebooklm.google.com (đã đăng nhập), nhấn F12 và chọn tab Network.",
+        "step2": "Tải lại trang, chọn một request bất kỳ gửi tới notebooklm.google.com, rồi mở Headers và Request Headers.",
+        "step3": "Sao chép toàn bộ giá trị của Cookie rồi dán vào đây.",
+        "cookieLabel": "Cookie NotebookLM",
+        "warning": "Cookie chính là phiên đăng nhập Google của bạn. Nó chỉ được lưu (đã mã hoá) trên máy này và không gửi đi đâu ngoài notebooklm.google.com. Cookie hết hạn sau vài tuần, khi đó hãy dán lại.",
+        "cancel": "Huỷ",
+        "save": "Lưu & Kiểm tra",
+        "saving": "Đang kiểm tra…",
+        "saved": "Đã kết nối NotebookLM · {count} notebook",
+        "saveFailed": "Cookie không dùng được",
+        "checkOk": "NotebookLM hoạt động tốt · {count} notebook",
+        "checkFailed": "Không kết nối được NotebookLM",
+        "removed": "Đã ngắt kết nối NotebookLM",
+        "loginChrome": "Đăng nhập bằng Chrome",
+        "reloginChrome": "Đăng nhập lại bằng Chrome",
+        "loginChromeHint": "Mở Chrome với hồ sơ riêng của Spec Studio. Đăng nhập xong thì đóng cửa sổ; những lần sau thường không cần đăng nhập lại.",
+        "waitingLogin": "Hãy đăng nhập Google trong cửa sổ Chrome vừa mở, rồi đóng cửa sổ đó để Spec Studio nhận phiên đăng nhập.",
+        "loginFailed": "Chưa đăng nhập xong NotebookLM",
+        "manualTitle": "Hoặc dán cookie thủ công"
+      }
+    },
+    "connectorForm": {
+      "createTitle": "Thêm kết nối",
+      "editTitle": "Sửa {name}",
+      "description": "Cách Spec Studio đăng nhập vào nơi lưu Git để xem danh sách repo, branch và tạo PR/MR.",
+      "type": "Loại kết nối",
+      "types": {
+        "CLI": {
+          "title": "CLI có sẵn trên máy",
+          "description": "gh, glab, tea… Không lưu token trong Spec Studio."
+        },
+        "MCP": {
+          "title": "MCP server",
+          "description": "Chạy bằng lệnh trên máy hoặc kết nối qua URL."
+        },
+        "TOKEN": {
+          "title": "Personal Access Token",
+          "description": "Token được mã hoá trước khi lưu."
+        },
+        "SSH": {
+          "title": "Khoá SSH",
+          "description": "Chỉ clone, Pull và Push code."
+        }
+      },
+      "name": "Tên",
+      "namePlaceholder": "GitHub cá nhân",
+      "provider": "Nhà cung cấp",
+      "host": "Địa chỉ máy chủ",
+      "hostHint": "Bỏ trống để dùng địa chỉ mặc định của nhà cung cấp.",
+      "cliCommand": "Lệnh CLI",
+      "cliCommandHint": "Bỏ trống để dùng lệnh theo nhà cung cấp (gh, glab, tea).",
+      "mcpCommand": "Lệnh chạy",
+      "mcpCommandHint": "Lệnh dùng để khởi động MCP server trên máy.",
+      "transport": "Cách kết nối",
+      "transports": {
+        "STDIO": "Lệnh trên máy",
+        "HTTP": "Qua URL"
+      },
+      "url": "URL",
+      "headers": "Header",
+      "headersHint": "Mỗi dòng một header, dạng Tên: giá trị.",
+      "args": "Tham số",
+      "argsHint": "Mỗi dòng một tham số.",
+      "env": "Biến môi trường",
+      "envHint": "Mỗi dòng một cặp KEY=VALUE (không chứa thông tin bí mật).",
+      "secrets": "Biến môi trường / header bí mật",
+      "secretsHint": "Chỉ nhập, không hiện lại. Được lưu mã hoá. Mỗi dòng một cặp KEY=VALUE.",
+      "secretsHintSet": "Đã lưu: {keys}. Nhập lại để thay thế, bỏ trống để giữ nguyên.",
+      "token": "Token",
+      "tokenHint": "Chỉ nhập, không hiện lại. Chỉ cấp quyền tối thiểu: đọc/ghi repo và tạo PR.",
+      "sshHint": "Dùng SSH key có sẵn trên máy. URL repo được nhập ở từng dự án.",
+      "create": "Thêm kết nối",
+      "created": "Đã thêm kết nối {name}",
+      "updated": "Đã lưu kết nối {name}"
+    },
+    "exportImport": {
+      "title": "Xuất / Nhập cài đặt",
+      "description": "Xuất cài đặt cơ bản (API trực tiếp, Agent chạy bằng CLI, kết nối) để dùng trên máy khác. File không chứa API key, token hay tài khoản, nên trên máy mới bạn cần đăng nhập hoặc nhập lại.",
+      "exportButton": "Xuất cài đặt",
+      "exportedFileName": "spec-studio-settings.json",
+      "importButton": "Nhập cài đặt",
+      "invalidFile": "File này không phải file cài đặt của Spec Studio.",
+      "importConfirmTitle": "Nhập cài đặt?",
+      "importConfirmDescription": "Cài đặt API trực tiếp và Agent chạy bằng CLI sẽ bị thay hoàn toàn. Kết nối trùng tên sẽ được bỏ qua, kết nối hiện có không bị xoá.",
+      "importSuccess": "Đã nhập cài đặt. Thêm {imported} kết nối mới.",
+      "importSkipped": "Bỏ qua {count} kết nối trùng tên: {names}.",
+      "importFailed": "Nhập cài đặt thất bại",
+      "importSummary": "{count} kết nối · xuất lúc {date}"
+    }
+  }
+}

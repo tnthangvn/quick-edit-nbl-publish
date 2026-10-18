@@ -1,0 +1,78 @@
+{
+  "projects": {
+    "title": "Dự án",
+    "description": "Mỗi dự án là một thư mục Spec trên máy, lưu trên máy, Git hoặc Google Drive.",
+    "count": "{count, plural, =0 {Chưa có dự án nào} other {# dự án · Local, Git hoặc Google Drive}}",
+    "actions": {
+      "importExisting": "Mở thư mục có sẵn",
+      "newProject": "Dự án mới"
+    },
+    "toolbar": {
+      "searchLabel": "Tìm dự án",
+      "searchPlaceholder": "Tìm theo tên hoặc đường dẫn…",
+      "filterLabel": "Lọc theo nơi lưu",
+      "filter": {
+        "ALL": "Tất cả",
+        "LOCAL": "Local",
+        "GIT": "Git",
+        "DRIVE": "Drive"
+      },
+      "sortLabel": "Sắp xếp",
+      "sortPrefix": "Sắp xếp:",
+      "sort": {
+        "RECENT": "Mở gần nhất",
+        "NAME": "Tên"
+      }
+    },
+    "list": {
+      "loading": "Đang tải danh sách dự án…",
+      "errorTitle": "Không tải được danh sách dự án",
+      "retry": "Thử lại",
+      "emptyTitle": "Tạo dự án đầu tiên",
+      "emptyDescription": "Chọn nơi lưu file .md (máy, Git hoặc Google Drive) và notebook NotebookLM cần đồng bộ.",
+      "importExisting": "Mở thư mục có sẵn",
+      "newProject": "Dự án mới",
+      "noMatch": "Không có dự án nào khớp “{q}”",
+      "noMatchFilter": "Không có dự án nào với bộ lọc này",
+      "noMatchHint": "Thử từ khoá khác hoặc bỏ bộ lọc nơi lưu.",
+      "openFailed": "Không mở được dự án"
+    },
+    "edit": {
+      "renameTitle": "Đổi tên dự án",
+      "renameDescription": "Tên hiện trên màn Dự án và trong danh sách chuyển Workspace.",
+      "locateTitle": "Tìm lại thư mục",
+      "locateDescription": "Không còn thấy thư mục {path}. Hãy nhập đường dẫn mới (thư mục phải có .spec-studio/config.json).",
+      "name": "Tên dự án",
+      "description": "Mô tả",
+      "path": "Thư mục làm việc",
+      "pathHint": "Đường dẫn đầy đủ trên máy.",
+      "renamed": "Đã đổi tên thành {name}",
+      "located": "Đã tìm lại thư mục của {name}"
+    },
+    "remove": {
+      "title": "Gỡ khỏi danh sách?",
+      "description": "Gỡ {name} khỏi màn Dự án. File trong thư mục vẫn được giữ nguyên.",
+      "confirm": "Gỡ",
+      "removed": "Đã gỡ {name} khỏi danh sách",
+      "descriptionDelete": "Gỡ {name} khỏi màn Dự án và xoá thư mục của dự án trên máy này.",
+      "deleteFiles": "Xoá luôn thư mục trên máy",
+      "deleteWarning": "Xoá vĩnh viễn, không hoàn tác được.",
+      "deleteWhat": "Xoá toàn bộ <code>{path}</code> trên máy: file Spec, .git và .spec-studio/.",
+      "deleteKeep": "Không ảnh hưởng đến nơi lưu trên mạng: Git remote, Google Drive và NotebookLM vẫn giữ nguyên.",
+      "confirmWord": "xoá",
+      "typeToConfirm": "Gõ <code>{word}</code> để xác nhận",
+      "confirmDelete": "Xoá thư mục",
+      "deleted": "Đã gỡ {name} và xoá thư mục trên máy"
+    },
+    "import": {
+      "title": "Mở thư mục có sẵn",
+      "description": "Thêm vào danh sách Dự án một thư mục đã có .spec-studio/config.json.",
+      "path": "Thư mục",
+      "pathHint": "Đường dẫn đầy đủ tới thư mục chứa .spec-studio/config.json.",
+      "name": "Tên khác (tuỳ chọn)",
+      "nameHint": "Chỉ cần khi tên trong config.json đã trùng với dự án khác.",
+      "submit": "Mở thư mục",
+      "imported": "Đã thêm {name} vào danh sách"
+    }
+  }
+}

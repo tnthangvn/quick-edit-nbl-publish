@@ -1,0 +1,20 @@
+{
+  "errors": {
+    "CONNECTOR": {
+      "NOT_FOUND": "Không tìm thấy kết nối này.",
+      "NOT_SUPPORTED": "Kết nối loại {type} không hỗ trợ thao tác này.",
+      "CLI_NOT_FOUND": "Máy chưa cài CLI \"{command}\". Hãy cài đặt rồi thử lại.",
+      "NEEDS_LOGIN": "Kết nối cần đăng nhập lại hoặc cập nhật token.",
+      "TOKEN_MISSING": "Kết nối này chưa có token. Hãy nhập token rồi thử lại.",
+      "PROVIDER_ERROR": "Nơi lưu trữ Git báo lỗi. Hãy thử lại sau.",
+      "REPO_NOT_FOUND": "Không tìm thấy repository hoặc bạn không có quyền truy cập.",
+      "MCP_UNREACHABLE": "Không kết nối được tới MCP server. Hãy kiểm tra lại cấu hình.",
+      "MCP_TOOL_MISSING": "MCP server không có công cụ {tool}.",
+      "INVALID_COMMAND": "Lệnh không hợp lệ.",
+      "INVALID_URL": "Địa chỉ không hợp lệ. Chỉ nhận địa chỉ bắt đầu bằng http:// hoặc https://.",
+      "INVALID_SECRET_KEY": "Tên biến hoặc header bí mật không hợp lệ.",
+      "INVALID_CONFIG": "Cấu hình kết nối không hợp lệ (mục {field}).",
+      "CLI_TOKEN_UNSUPPORTED": "CLI này chưa lấy được token truy cập (chưa hỗ trợ tea của Gitea). Hãy dùng kết nối Token, MCP hoặc SSH."
+    }
+  }
+}

@@ -1,0 +1,3 @@
+(()=>{"use strict";module.exports=[490426,a=>{var b=a.i(534738),c=class extends b.z6{static{(0,b._f)(this,"GitGraphTokenBuilder")}constructor(){super(["gitGraph"])}},d={parser:{TokenBuilder:(0,b._f)(()=>new c,"TokenBuilder"),ValueConverter:(0,b._f)(()=>new b.Xl,"ValueConverter")}};function e(a=b.qh){let c=(0,b.s3)((0,b.ac)(a),b.Sg),f=(0,b.s3)((0,b.Ut)({shared:c}),b.vQ,d);return c.ServiceRegistry.register(f),{shared:c,GitGraph:f}}(0,b._f)(e,"createGitGraphServices"),a.s(["O",0,d,"E",0,e])},261276,a=>{var b=a.i(490426);a.i(534738),a.S([b,"createGitGraphServices,E"],261276)}]})();
+
+//# sourceMappingURL=1fxq_%40mermaid-js_parser_dist_chunks_mermaid-parser_core_1i-f_2_ckogt_._.js.map

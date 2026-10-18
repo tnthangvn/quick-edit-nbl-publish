@@ -1,0 +1,22 @@
+{
+  "errors": {
+    "STORAGE": {
+      "NOT_SUPPORTED": "Nơi lưu trữ của Workspace không hỗ trợ thao tác này.",
+      "CONFIG_MISSING": "Workspace chưa chọn nơi lưu trữ. Hãy thiết lập trong Cài đặt.",
+      "PULL_CONFLICT": "Không Pull được vì có xung đột hoặc lịch sử hai bên đã khác nhau. Hãy xử lý thủ công rồi thử lại.",
+      "PUSH_REJECTED": "Push bị từ chối. Hãy Pull thay đổi mới nhất rồi thử lại.",
+      "GIT_AUTH_FAILED": "Không xác thực được với Git. Hãy kiểm tra lại kết nối.",
+      "GIT_COMMAND_FAILED": "Lệnh git {command} không thành công.",
+      "CLONE_FAILED": "Không tải được repository về máy. Hãy kiểm tra địa chỉ và quyền truy cập.",
+      "GOOGLE_NOT_CONFIGURED": "Chưa thiết lập đăng nhập Google. Hãy liên hệ người quản trị.",
+      "GOOGLE_AUTH_REQUIRED": "Hãy đăng nhập Google để dùng Google Drive.",
+      "GOOGLE_OAUTH_STATE_INVALID": "Phiên đăng nhập Google đã hết hạn hoặc không hợp lệ. Hãy thử lại.",
+      "GOOGLE_OAUTH_FAILED": "Đăng nhập Google không thành công. Hãy thử lại.",
+      "DRIVE_NOT_FOUND": "Không tìm thấy thư mục hoặc file trên Google Drive, hoặc bạn không có quyền truy cập.",
+      "DRIVE_REQUEST_FAILED": "Không kết nối được Google Drive. Hãy thử lại sau.",
+      "GIT_IDENTITY_MISSING": "Git chưa có tên và email tác giả. Chạy git config --global user.name \"Tên\" và git config --global user.email \"email\" rồi thử lại.",
+      "BRANCH_MISMATCH": "Máy đang ở nhánh {current}, khác nhánh đã cài đặt là {expected}. Hãy chuyển sang nhánh {expected} rồi thử lại.",
+      "DRIVE_PULL_CONFLICT": "Không Pull từ Google Drive được vì các file này trên máy có thay đổi chưa đồng bộ hoặc mới hơn bản trên Drive: {files}. Hãy Push hoặc huỷ thay đổi rồi thử lại."
+    }
+  }
+}

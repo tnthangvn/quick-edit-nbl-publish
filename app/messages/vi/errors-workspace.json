@@ -1,0 +1,35 @@
+{
+  "errors": {
+    "WORKSPACE": {
+      "NOT_FOUND": "Không tìm thấy Workspace.",
+      "NAME_TAKEN": "Tên dự án \"{name}\" đã được dùng. Hãy chọn tên khác.",
+      "PATH_IN_USE": "Thư mục này đã thuộc một Workspace khác.",
+      "PATH_NESTED": "Thư mục này nằm chồng lên dự án “{name}” ({path}), file Spec của hai dự án sẽ bị lẫn. Hãy chọn thư mục nằm ngoài.",
+      "ALREADY_REGISTERED": "Workspace này đã có trong danh sách (ở thư mục {path}).",
+      "CONFIG_EXISTS": "Thư mục này đã có sẵn cấu hình dự án. Hãy dùng \"Mở thư mục có sẵn\".",
+      "CONFIG_NOT_FOUND": "Thư mục này chưa có cấu hình dự án (.spec-studio/config.json).",
+      "CONFIG_INVALID": "File cấu hình dự án (.spec-studio/config.json) không hợp lệ.",
+      "CONFIG_ID_MISMATCH": "Thư mục {path} thuộc về dự án khác (mã trong .spec-studio/config.json không khớp).",
+      "FOLDER_NOT_FOUND": "Không tìm thấy thư mục.",
+      "FOLDER_MISSING": "Không tìm thấy thư mục của Workspace. Hãy chọn \"Tìm lại\" hoặc gỡ khỏi danh sách.",
+      "FOLDER_NOT_WRITABLE": "Không ghi được vào thư mục này. Hãy kiểm tra quyền truy cập.",
+      "FOLDER_NOT_EMPTY": "Thư mục để tải về phải còn trống hoặc chưa tồn tại.",
+      "INVALID_PATH": "Đường dẫn không hợp lệ. Hãy nhập đường dẫn đầy đủ.",
+      "INVALID_SPECS_DIR": "Thư mục Spec phải nằm bên trong Workspace.",
+      "INVALID_GIT_REMOTE": "Địa chỉ repository không hợp lệ (dùng https://, ssh:// hoặc git@host:owner/repo).",
+      "INVALID_BRANCH": "Tên nhánh không hợp lệ.",
+      "INVALID_REPO": "Repository phải có dạng owner/repo.",
+      "CLONE_FAILED": "Không tải được repository về máy. Hãy kiểm tra địa chỉ và quyền truy cập.",
+      "DRIVE_DOWNLOAD_FAILED": "Không tải được thư mục từ Google Drive. Hãy thử lại.",
+      "NOTEBOOK_IMPORT_FAILED": "Không nhập được Spec từ NotebookLM. Hãy thử lại.",
+      "GIT_REMOTE_UNREACHABLE": "Không kết nối được tới Git. Hãy kiểm tra địa chỉ và mạng.",
+      "GIT_BRANCH_NOT_FOUND": "Không tìm thấy nhánh {branch} trên Git.",
+      "DRIVE_NOT_CONFIGURED": "Chưa thiết lập đăng nhập Google cho Drive. Hãy liên hệ người quản trị.",
+      "DRIVE_ACCESS_DENIED": "Bạn không có quyền đọc hoặc ghi thư mục này trên Google Drive.",
+      "NOTEBOOK_UNREACHABLE": "Không truy cập được notebook. Hãy kiểm tra Notebook ID và đăng nhập NotebookLM.",
+      "DELETE_NOT_CONFIRMED": "Hãy gõ đúng từ xác nhận để xoá thư mục trên máy.",
+      "DELETE_UNSAFE": "Không xoá thư mục {path} vì xoá thư mục này không an toàn ({reason}).",
+      "HAS_NESTED_WORKSPACES": "Không xoá được vì thư mục này chứa các dự án khác trong danh sách ({paths}). Hãy gỡ các dự án đó trước."
+    }
+  }
+}

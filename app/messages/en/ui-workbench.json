@@ -1,0 +1,258 @@
+{
+  "workbench": {
+    "toast": {
+      "saveFailed": "Could not save {file}",
+      "openFailed": "Could not open the Workspace",
+      "settingsFailed": "Could not save Agent settings"
+    },
+    "storage": {
+      "label": "Storage status",
+      "pending": "{count, plural, =0 {In sync} one {# change} other {# changes}}",
+      "gitSummary": "Branch {branch} · {uncommitted} uncommitted · {ahead} to Push · {behind} to Pull",
+      "driveSummary": "{count, plural, =0 {Nothing waiting to upload} one {# file waiting to upload} other {# files waiting to upload}}",
+      "pull": "Pull",
+      "push": "Push",
+      "pushed": "{count, plural, one {Pushed # file} other {Pushed # files}}",
+      "nothingToPush": "Nothing to push",
+      "openPr": "Open PR #{number}",
+      "pullFailed": "Pull failed",
+      "pushFailed": "Push failed",
+      "forcePush": "Force Push"
+    },
+    "sidebar": {
+      "label": "Spec list",
+      "title": "Specs",
+      "expand": "Open Sidebar",
+      "count": "{count, plural, one {# spec} other {# specs}}",
+      "selectAll": "Use All Specs as Context",
+      "inContext": "{count} in context",
+      "newSpec": "New spec",
+      "loadFailed": "Could not load specs",
+      "retry": "Retry",
+      "emptyTitle": "No specs yet",
+      "emptyDescription": "Create the first .md file in {dir}.",
+      "forceSyncFailed": "Could not sync {file} again"
+    },
+    "dialogs": {
+      "new": {
+        "title": "New spec",
+        "description": "Create a Markdown file in the Workspace spec folder.",
+        "fileLabel": "File name",
+        "fileHint": "Relative path, e.g. overview.md or ui/header.md.",
+        "submit": "Create",
+        "created": "Created {file}"
+      },
+      "rename": {
+        "title": "Rename spec",
+        "description": "Rename {file} in the local spec folder.",
+        "fileLabel": "New name",
+        "renamed": "Renamed {from} to {to}"
+      },
+      "delete": {
+        "title": "Delete {file}?",
+        "description": "The file is removed from the spec folder on this computer. Its matching NotebookLM source is also removed, the same way as Approve & Save, depending on the Workspace sync settings. Git and Google Drive are not changed.",
+        "deleted": "Deleted {file}",
+        "failed": "Could not delete {file}"
+      }
+    },
+    "editor": {
+      "label": "Workspace",
+      "loading": "Loading editor…",
+      "monacoFailed": "Could not load the editor",
+      "noSpecsTitle": "Start with your first spec",
+      "noSpecsDescription": "This Workspace has no .md files yet. Create a spec, then edit it with the Agent.",
+      "newSpec": "New spec",
+      "noSelectionTitle": "Pick a spec",
+      "noSelectionDescription": "Click a file on the left to open it. Tick its checkbox to add it to the Agent context.",
+      "pendingProposals": "{count, plural, one {# proposal to review} other {# proposals to review}}",
+      "loadFailed": "Could not open {file}",
+      "editorLabel": "Content of {file}",
+      "markdown": "Markdown",
+      "draftHint": "Draft kept on this computer, not saved to the file yet",
+      "approveSave": "Approve & Save",
+      "saving": "Saving…",
+      "saved": "Saved",
+      "viewMode": "View mode",
+      "preview": "Preview",
+      "source": "Edit",
+      "previewLabel": "Preview {file}",
+      "linkNotFound": "{file} is not a file in this Workspace",
+      "diff": "Diff",
+      "diffNoChanges": "No changes from the saved file",
+      "diffLabel": "Compare draft {file}",
+      "splitResize": "Drag to resize the editor and preview",
+      "diffTitle": "Changes from saved file",
+      "externalConflict": "{file} was changed outside the app while you have an unsaved draft.",
+      "externalReload": "Load New Version (Discard Draft)",
+      "externalKeepDraft": "Keep Draft"
+    },
+    "diff": {
+      "label": "Review agent changes",
+      "toolbar": "Review changes",
+      "title": "Agent proposes changes to <code>{file}</code>",
+      "titleNew": "Agent proposes creating <code>{file}</code>",
+      "stats": "{added} lines added, {removed} lines removed",
+      "queue": "{index}/{total}",
+      "original": "Original",
+      "proposed": "Proposed",
+      "editorLabel": "Diff of {file}",
+      "reject": "Reject",
+      "approveSave": "Approve & Save",
+      "saving": "Saving…",
+      "rejected": "Discarded the proposal for {file}",
+      "diff": "Diff",
+      "previewOf": "Preview · {file}",
+      "editable": "you can edit directly",
+      "dismissFailed": "Could not record keeping the local copy of {file}. The Pull badge may show it again.",
+      "titleNotebook": "NotebookLM has a newer <code>{file}</code>",
+      "titleNotebookNew": "NotebookLM has a new file <code>{file}</code>",
+      "titleExternal": "<code>{file}</code> was changed outside the app and is not synced",
+      "titleExternalNew": "<code>{file}</code> was created outside the app and is not synced",
+      "rejectedExternal": "Kept {file} as is, not synced"
+    },
+    "sync": {
+      "label": "Sync activity",
+      "running": "Syncing <code>{file}</code>",
+      "done": "Synced <code>{file}</code>",
+      "withErrors": "Synced {done}/{total} targets · {errors} failed",
+      "progress": "{done}/{total} targets",
+      "waiting": "Waiting for the sync to start…",
+      "gitPullRequest": "Git · Pull Request",
+      "collapse": "Collapse",
+      "expand": "Expand",
+      "close": "Close",
+      "retryFailed": "Could not retry this item"
+    },
+    "toolbar": {
+      "model": "Model",
+      "modelPlaceholder": "Pick a model",
+      "profile": "CLI Profile",
+      "profilePlaceholder": "Pick a CLI profile",
+      "context": "{count, plural, one {# spec in context} other {# specs in context}}",
+      "settings": "Agent settings",
+      "newSession": "New session",
+      "history": "History",
+      "historyLoading": "Loading…",
+      "historyEmpty": "No sessions yet",
+      "deleteSession": "Delete Current Session",
+      "deleteSessionFailed": "Could not delete the chat session",
+      "permissionLabel": "CLI permissions",
+      "permission": {
+        "DEFAULT": "Use profile setting",
+        "PLAN": "Plan only",
+        "ACCEPT_EDITS": "Edit files automatically",
+        "BYPASS": "Skip confirmations"
+      },
+      "permissionHint": {
+        "DEFAULT": "Use the settings already in the CLI profile",
+        "PLAN": "Read only, makes a plan",
+        "ACCEPT_EDITS": "Edits files, asks before running commands",
+        "BYPASS": "Never asks for confirmation"
+      },
+      "dock": "Chat position",
+      "dockOption": {
+        "BOTTOM": "Below editor",
+        "LEFT": "Left",
+        "RIGHT": "Right"
+      },
+      "resizeChat": "Drag to resize the chat panel",
+      "permissionUnsupported": "This CLI does not support this when running in the background",
+      "permissionNotAvailable": "This CLI has no permission levels. It runs with the profile settings.",
+      "effortInModel": "Reasoning level is already part of the selected model"
+    },
+    "chat": {
+      "hint": "Tick the related specs on the left, then describe the change you want.",
+      "thinking": "Agent is working",
+      "cliTitle": "{profile} · {stream}",
+      "tool": {
+        "running": "Running",
+        "drafting": "Drafting",
+        "done": "Done",
+        "error": "Error",
+        "noChanges": "No changes",
+        "pendingReview": "Awaiting review",
+        "reviewed": "Handled",
+        "openDiff": "Open Diff"
+      },
+      "untitled": "Untitled session",
+      "record": {
+        "working": "Working",
+        "thinking": "Thinking",
+        "DONE": "Worked for {duration}",
+        "DONEShort": "Done",
+        "FAILED": "Failed after {duration}",
+        "FAILEDShort": "Failed",
+        "STOPPED": "Stopped after {duration}",
+        "STOPPEDShort": "Stopped",
+        "steps": "{count, plural, one {# step} other {# steps}}",
+        "thought": "Thought",
+        "tokens": "{input} in · {output} out",
+        "turns": "{count, plural, one {# turn} other {# turns}}",
+        "verb": {
+          "read": "Read",
+          "edit": "Edit",
+          "write": "Create",
+          "search": "Search",
+          "exec": "Run",
+          "web": "Web",
+          "plan": "Plan",
+          "task": "Sub-agent",
+          "other": "Tool"
+        }
+      }
+    },
+    "composer": {
+      "placeholderApi": "Ask the Agent to edit specs…",
+      "placeholderCli": "Instructions for the CLI Agent…",
+      "noContext": "No spec selected as context",
+      "contextLabel": "{count, plural, one {# spec in context} other {# specs in context}}",
+      "cliStartFailed": "Could not start the CLI Agent",
+      "cliStopFailed": "Could not stop the CLI Agent",
+      "sessionFailed": "Could not create the chat session",
+      "imageType": "Only PNG, JPEG, WebP or GIF images can be pasted.",
+      "imageTooLarge": "Image is larger than {max} MB.",
+      "imageLimit": "Up to {max} images per message."
+    },
+    "syncAll": {
+      "label": "Sync",
+      "started": "Started syncing {count} files to {targets}",
+      "failed": "Could not sync {file}",
+      "selected": "Sync {count} selected files to {targets}",
+      "noneSelected": "Tick files in the sidebar to choose what to sync",
+      "confirmTitle": "Approve {count} proposals before syncing?",
+      "confirmDescription": "These files have Agent proposals that have not been reviewed. Approve All & Sync saves the proposed content (edits you made by hand in the Diff are not included), then syncs all {count} selected files to {targets}.",
+      "confirmAction": "Approve All & Sync"
+    },
+    "loading": {
+      "OPENING": {
+        "title": "Opening Workspace…",
+        "description": "Reading the spec list and syncing on open."
+      },
+      "CHECKING_NOTEBOOK": {
+        "title": "Checking NotebookLM…",
+        "description": "Comparing NotebookLM files with the copies on this computer. Editing is paused so nothing gets overwritten."
+      }
+    },
+    "notebookPull": {
+      "label": "Pull",
+      "badge": "{count} files on NotebookLM are newer. Click Pull to review",
+      "upToDate": "No new changes on NotebookLM",
+      "failed": "Could not pull from NotebookLM",
+      "dialogTitle": "Pull from NotebookLM",
+      "dialogDescription": "{count} files on NotebookLM differ from the copies on this computer. Pick the files to take: Approve writes the NotebookLM version to the file, Reject keeps your version.",
+      "loading": "Comparing NotebookLM with files on this computer…",
+      "checkFailed": "Could not check NotebookLM",
+      "selectAll": "Select all",
+      "selectedCount": "{selected}/{total} files selected",
+      "listLabel": "Files that differ from NotebookLM",
+      "status": {
+        "NEW": "New",
+        "CHANGED": "Changed"
+      },
+      "rejectAll": "Reject All",
+      "approveAll": "Approve All",
+      "approveSelected": "Approve ({count})",
+      "applied": "Took {approved} files from NotebookLM, kept your version of {rejected} files"
+    }
+  }
+}

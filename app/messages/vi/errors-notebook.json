@@ -1,0 +1,15 @@
+{
+  "errors": {
+    "NOTEBOOK": {
+      "NOT_CONFIGURED": "Workspace chưa kết nối NotebookLM. Hãy thiết lập trong Cài đặt.",
+      "AUTH_REQUIRED": "Phiên NotebookLM đã hết hạn hoặc cookie không đúng. Hãy dán lại cookie ở Cài đặt, mục Tích hợp, NotebookLM.",
+      "NOT_FOUND": "Không tìm thấy notebook hoặc bạn không có quyền truy cập.",
+      "COMMAND_FAILED": "Thao tác với NotebookLM không thành công. Hãy thử lại.",
+      "CREDENTIALS_MISSING": "Chưa kết nối NotebookLM. Hãy dán cookie ở Cài đặt, mục Tích hợp, NotebookLM.",
+      "CHROME_NOT_FOUND": "Không tìm thấy Google Chrome hoặc Chromium trên máy. Hãy cài Chrome hoặc dán cookie thủ công.",
+      "LOGIN_NOT_FOUND": "Phiên đăng nhập đã hết hạn. Hãy đăng nhập lại.",
+      "LOGIN_TIMEOUT": "Đăng nhập chưa xong sau 5 phút. Hãy thử lại.",
+      "LOGIN_CLOSED": "Cửa sổ Chrome đã đóng trước khi đăng nhập xong. Hãy thử lại."
+    }
+  }
+}

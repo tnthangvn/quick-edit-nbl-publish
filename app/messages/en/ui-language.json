@@ -1,0 +1,15 @@
+{
+  "settings": {
+    "tabs": {
+      "LANGUAGE": "Language"
+    },
+    "language": {
+      "label": "Language",
+      "hint": "Display language of the app.",
+      "options": {
+        "vi": "Tiếng Việt",
+        "en": "English"
+      }
+    }
+  }
+}

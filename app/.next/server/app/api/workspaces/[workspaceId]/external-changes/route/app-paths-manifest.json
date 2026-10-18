@@ -1,0 +1,3 @@
+{
+  "/api/workspaces/[workspaceId]/external-changes/route": "app/api/workspaces/[workspaceId]/external-changes/route.js"
+}

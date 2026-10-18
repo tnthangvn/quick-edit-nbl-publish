@@ -1,0 +1,10 @@
+{
+  "errors": {
+    "FILESYSTEM": {
+      "DIRECTORY_NOT_FOUND": "The folder {path} was not found.",
+      "DIRECTORY_EXISTS": "A folder or file with this name already exists: {path}. Choose a different name.",
+      "DIRECTORY_NOT_WRITABLE": "You do not have permission to create a folder in {path}.",
+      "DIRECTORY_NOT_READABLE": "You do not have permission to read the folder {path}."
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "errors": {
+    "STORAGE": {
+      "NOT_SUPPORTED": "The Workspace storage does not support this action.",
+      "CONFIG_MISSING": "This Workspace has no storage selected. Set it up in Settings.",
+      "PULL_CONFLICT": "Could not Pull because of conflicts or because the two histories differ. Resolve it manually and try again.",
+      "PUSH_REJECTED": "Push was rejected. Pull the latest changes and try again.",
+      "GIT_AUTH_FAILED": "Could not sign in to Git. Check the connection.",
+      "GIT_COMMAND_FAILED": "The git {command} command did not succeed.",
+      "CLONE_FAILED": "Could not download the repository. Check the address and your access.",
+      "GOOGLE_NOT_CONFIGURED": "Google sign-in has not been set up. Contact your administrator.",
+      "GOOGLE_AUTH_REQUIRED": "Sign in with Google to use Google Drive.",
+      "GOOGLE_OAUTH_STATE_INVALID": "The Google sign-in session has expired or is not valid. Try again.",
+      "GOOGLE_OAUTH_FAILED": "Google sign-in did not succeed. Try again.",
+      "DRIVE_NOT_FOUND": "The folder or file was not found on Google Drive, or you do not have access to it.",
+      "DRIVE_REQUEST_FAILED": "Could not reach Google Drive. Try again later.",
+      "GIT_IDENTITY_MISSING": "Git does not have an author name and email yet. Run git config --global user.name \"Name\" and git config --global user.email \"email\", then try again.",
+      "BRANCH_MISMATCH": "This computer is on branch {current}, not the configured branch {expected}. Switch to branch {expected} and try again.",
+      "DRIVE_PULL_CONFLICT": "Could not Pull from Google Drive because these files on this computer have unsynced changes or are newer than the Drive copy: {files}. Push or discard those changes and try again."
+    }
+  }
+}

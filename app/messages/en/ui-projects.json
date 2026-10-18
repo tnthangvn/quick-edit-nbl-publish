@@ -1,0 +1,78 @@
+{
+  "projects": {
+    "title": "Projects",
+    "description": "Each project is a spec folder on this machine, stored locally, in Git or on Google Drive.",
+    "count": "{count, plural, =0 {No projects yet} one {# project · Local, Git or Google Drive} other {# projects · Local, Git or Google Drive}}",
+    "actions": {
+      "importExisting": "Open Existing Folder",
+      "newProject": "New Project"
+    },
+    "toolbar": {
+      "searchLabel": "Search projects",
+      "searchPlaceholder": "Search by name or path…",
+      "filterLabel": "Filter by storage",
+      "filter": {
+        "ALL": "All",
+        "LOCAL": "Local",
+        "GIT": "Git",
+        "DRIVE": "Drive"
+      },
+      "sortLabel": "Sort",
+      "sortPrefix": "Sort:",
+      "sort": {
+        "RECENT": "Recently opened",
+        "NAME": "Name"
+      }
+    },
+    "list": {
+      "loading": "Loading projects…",
+      "errorTitle": "Couldn't load projects",
+      "retry": "Retry",
+      "emptyTitle": "Create your first project",
+      "emptyDescription": "Choose where the .md files are kept (this machine, Git or Google Drive) and which NotebookLM notebook to sync.",
+      "importExisting": "Open Existing Folder",
+      "newProject": "New Project",
+      "noMatch": "No project matches “{q}”",
+      "noMatchFilter": "No projects with this filter",
+      "noMatchHint": "Try another keyword or clear the storage filter.",
+      "openFailed": "Couldn't open the project"
+    },
+    "edit": {
+      "renameTitle": "Rename project",
+      "renameDescription": "Shown on the Projects screen and in the Workspace switcher.",
+      "locateTitle": "Locate folder",
+      "locateDescription": "The folder {path} can no longer be found. Enter the new path (the folder must contain .spec-studio/config.json).",
+      "name": "Project name",
+      "description": "Description",
+      "path": "Working folder",
+      "pathHint": "Full path on this machine.",
+      "renamed": "Renamed to {name}",
+      "located": "Found the folder of {name}"
+    },
+    "remove": {
+      "title": "Remove from list?",
+      "description": "Remove {name} from Projects. Files in the folder are kept.",
+      "confirm": "Remove",
+      "removed": "Removed {name} from the list",
+      "descriptionDelete": "Remove {name} from Projects and delete its folder on this machine.",
+      "deleteFiles": "Also delete the folder on this machine",
+      "deleteWarning": "Permanent. This cannot be undone.",
+      "deleteWhat": "Deletes everything in <code>{path}</code> on this machine: spec files, .git and .spec-studio/.",
+      "deleteKeep": "Online copies are not affected: the Git remote, Google Drive and NotebookLM stay as they are.",
+      "confirmWord": "delete",
+      "typeToConfirm": "Type <code>{word}</code> to confirm",
+      "confirmDelete": "Delete Folder",
+      "deleted": "Removed {name} and deleted its folder"
+    },
+    "import": {
+      "title": "Open existing folder",
+      "description": "Add a folder that already has .spec-studio/config.json to the Projects list.",
+      "path": "Folder",
+      "pathHint": "Full path to the folder that contains .spec-studio/config.json.",
+      "name": "Different name (optional)",
+      "nameHint": "Only needed if the name in config.json is already used by another project.",
+      "submit": "Open Folder",
+      "imported": "Added {name} to the list"
+    }
+  }
+}

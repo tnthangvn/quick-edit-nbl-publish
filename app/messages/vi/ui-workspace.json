@@ -1,0 +1,12 @@
+{
+  "workspaceSwitcher": {
+    "trigger": "Đổi Workspace: {name}",
+    "allProjects": "Tất cả dự án…",
+    "projects": "Dự án",
+    "recent": "Gần đây",
+    "loading": "Đang tải…",
+    "loadFailed": "Không tải được danh sách. Bấm để thử lại",
+    "empty": "Chưa có dự án nào",
+    "openFailed": "Không mở được dự án"
+  }
+}

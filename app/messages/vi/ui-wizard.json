@@ -1,0 +1,240 @@
+{
+  "wizard": {
+    "title": "Dự án mới",
+    "description": "Tạo một dự án Spec mới: chọn nơi lưu file .md và notebook NotebookLM cần đồng bộ.",
+    "stepsLabel": "Các bước",
+    "stepOf": "Bước {current}/{total}",
+    "back": "Quay lại",
+    "next": "Tiếp",
+    "create": "Tạo dự án",
+    "creating": "Đang tạo…",
+    "steps": {
+      "info": {
+        "title": "Thông tin",
+        "description": "Tên dự án"
+      },
+      "storage": {
+        "title": "Nơi lưu file",
+        "description": "Local · Git · Drive"
+      },
+      "notebook": {
+        "title": "NotebookLM",
+        "description": "Notebook đích"
+      },
+      "review": {
+        "title": "Xem lại và tạo",
+        "description": "Tóm tắt lựa chọn"
+      }
+    },
+    "info": {
+      "name": "Tên dự án",
+      "nameHint": "Hiện trên màn Dự án và trong danh sách chuyển Workspace. Không được trùng với dự án khác.",
+      "namePlaceholder": "Spec Studio Design",
+      "description": "Mô tả (tuỳ chọn)",
+      "descriptionPlaceholder": "Spec cho công cụ sửa file .md bằng AI và đồng bộ lên NotebookLM"
+    },
+    "storage": {
+      "path": "Thư mục làm việc",
+      "pathHint": "Đường dẫn đầy đủ, ghi được và chưa thuộc dự án nào khác.",
+      "specsDir": "Thư mục Spec",
+      "specsDirHint": "Để trống thì các file Spec nằm ngay trong thư mục làm việc.",
+      "specsDirPlaceholder": "để trống = thư mục gốc của Workspace",
+      "gitToggle": {
+        "label": "Đồng bộ qua Git",
+        "hint": "GitHub, GitLab, Bitbucket, Gitea hoặc một URL Git."
+      },
+      "driveToggle": {
+        "label": "Đồng bộ qua Google Drive",
+        "hint": "Một thư mục trên Drive kèm bản sao trên máy."
+      },
+      "gitDetected": {
+        "title": "Thư mục này đã là một repo Git",
+        "author": "Tác giả commit: {author}",
+        "apply": "Dùng remote này"
+      },
+      "localToggle": {
+        "label": "Lưu trên máy (Local) · bắt buộc",
+        "hint": "Thư mục làm việc ở trên là bản chính để sửa Spec. Bật thêm Git hoặc Drive để đồng bộ sang nơi khác."
+      }
+    },
+    "git": {
+      "provider": "Nhà cung cấp",
+      "host": "Địa chỉ máy chủ",
+      "hostHintDefault": "Bỏ trống để dùng {host}. Chỉ nhập khi dùng máy chủ tự dựng.",
+      "hostHint": "Địa chỉ máy chủ Git (ví dụ git.company.vn).",
+      "connectVia": "Kết nối qua",
+      "connectViaHint": "Quản lý kết nối ở Cài đặt › Tích hợp. Thứ tự ưu tiên: CLI, MCP, Token, SSH.",
+      "loadingConnectors": "Đang tải danh sách kết nối…",
+      "sshTitle": "Khoá SSH / URL repo",
+      "sshDescription": "Dùng SSH key có sẵn trên máy: chỉ clone, Pull và Push code. Không xem được danh sách repo và không tạo được PR.",
+      "needsLogin": "Kết nối này cần đăng nhập lại. Chạy lệnh đăng nhập trong terminal, rồi bấm Kiểm tra ở Cài đặt › Tích hợp.",
+      "useDetected": "Dùng {command}",
+      "addConnector": "Thêm kết nối",
+      "repo": "Repo",
+      "loadingRepos": "Đang tải danh sách repo…",
+      "repoHint": "Lấy từ {source}. Nếu không thấy trong danh sách, hãy gõ owner/repo.",
+      "private": "riêng tư",
+      "public": "công khai",
+      "defaultBranch": "mặc định",
+      "remote": "URL repo",
+      "remoteHint": "https://, ssh:// hoặc git@host:owner/repo.git",
+      "branch": "Branch",
+      "subdir": "Thư mục Spec trong repo",
+      "subdirHint": "Để trống thì dùng thư mục gốc của repo.",
+      "subdirPlaceholder": "để trống = thư mục gốc của repo",
+      "publishMode": "Cách đẩy thay đổi sau khi Duyệt",
+      "push": "Commit và Push thẳng",
+      "pushDescription": "Lên branch đã chọn. Nhanh, hợp với repo cá nhân.",
+      "pr": "Tạo {name}",
+      "prDescription": "Tạo branch theo mẫu rồi mở PR/MR. Các lần Duyệt trong cùng một phiên dùng chung một branch.",
+      "prDisabled": "Cần một kết nối CLI, MCP hoặc Token của nhà cung cấp này.",
+      "pullRequest": "Pull Request",
+      "mergeRequest": "Merge Request",
+      "prBranchTemplate": "Mẫu tên branch",
+      "prBranchTemplateHint": "Biến dùng được: '{date}', '{filename}'.",
+      "commitMessage": "Mẫu nội dung commit",
+      "commitMessageHint": "Biến dùng được: '{action}', '{filename}'.",
+      "authorName": "Tên tác giả",
+      "authorNamePlaceholder": "Nguyễn Văn A",
+      "authorHint": "Được ghi làm tên và email của người commit trong repo. Để trống thì dùng cấu hình Git chung của máy.",
+      "authorEmail": "Email tác giả",
+      "authMode": "Cách xác thực",
+      "authConnector": "Kết nối / SSH",
+      "authTokenUrl": "Token trong URL",
+      "tokenUrl": "URL repo kèm token",
+      "tokenUrlHint": "Dán URL Git có kèm token (https://user:TOKEN@host/owner/repo.git). Token được tách ra và lưu mã hoá, cài đặt chỉ giữ URL sạch.",
+      "tokenUrlConnect": "Kết nối",
+      "tokenUrlInvalid": "URL không hợp lệ. Dạng đúng: https://user:TOKEN@host/owner/repo.git",
+      "tokenUrlOk": "Đã kết nối {repo}",
+      "autoCommit": {
+        "label": "Tự commit sau khi Duyệt",
+        "hint": "Mỗi lần Duyệt tạo một commit."
+      },
+      "autoPush": {
+        "label": "Tự Push hoặc tạo PR sau khi commit",
+        "hint": "Nếu tắt, hãy bấm Push ở thanh trên cùng khi sẵn sàng."
+      },
+      "pullOnOpen": {
+        "label": "Pull khi mở Workspace",
+        "hint": "Cập nhật bản mới nhất từ remote mỗi lần mở."
+      },
+      "tokenTitle": "Access token (PAT)",
+      "tokenDescription": "Dùng Personal Access Token để clone, Pull và Push code (và tạo PR nếu token có quyền).",
+      "tokenLabel": "Personal Access Token",
+      "tokenSave": "Lưu và dùng",
+      "tokenHint": "Cần quyền đọc/ghi repo (GitHub: contents read/write; GitLab: read_repository và write_repository). Token được mã hoá khi lưu, chỉ gửi tới đúng máy chủ này và không được ghi vào URL hay .git/config.",
+      "tokenName": "Token · {host}",
+      "tokenOk": "Token hợp lệ",
+      "tokenCheckFailed": "Đã lưu token nhưng kiểm tra chưa thành công"
+    },
+    "google": {
+      "checking": "Đang kiểm tra đăng nhập Google…",
+      "connected": "Đã đăng nhập Google và cấp quyền truy cập Drive.",
+      "waiting": "Đang chờ đăng nhập…",
+      "signIn": "Đăng nhập Google",
+      "notConnected": "Chưa đăng nhập Google.",
+      "notConfigured": "Máy chủ chưa được cấu hình đăng nhập Google. Hãy liên hệ người quản trị."
+    },
+    "drive": {
+      "folder": "URL hoặc ID thư mục Drive",
+      "folderHint": "Dán URL hoặc ID của thư mục Drive, ID sẽ được tự tách ra.",
+      "auth": "Tài khoản Google",
+      "authHint": "Dùng chung với đồng bộ NotebookLM qua Drive nếu cùng tài khoản.",
+      "pullOnOpen": {
+        "label": "Tải về khi mở",
+        "hint": "Lấy bản mới nhất từ Drive mỗi lần mở Workspace."
+      },
+      "pushOnApprove": {
+        "label": "Tải lên sau khi Duyệt",
+        "hint": "Ghi file đã duyệt lên Drive."
+      },
+      "browse": "Chọn thư mục trên Drive",
+      "folderPicked": "Đã chọn thư mục Drive “{name}”."
+    },
+    "notebook": {
+      "skip": "Bỏ qua, kết nối sau",
+      "notebookId": "Notebook ID",
+      "notebookIdHint": "Dán URL hoặc ID của notebook, ID sẽ được tự tách ra.",
+      "strategy": "Cách đồng bộ",
+      "strategies": {
+        "DRIVE_SYNC": {
+          "title": "Qua Google Drive",
+          "description": "Ghi Spec thành Google Doc rồi làm mới nguồn. Ổn định, nên dùng."
+        },
+        "RPC": {
+          "title": "Dùng cookie trực tiếp",
+          "description": "Xoá nguồn cũ rồi tải lại bản mới. Nhanh, nhưng sẽ lỗi khi cookie hết hạn."
+        }
+      },
+      "driveFolder": "ID thư mục Drive",
+      "driveFolderHint": "Thư mục Drive chứa bản Google Doc của Spec.",
+      "rpcHint": "Hãy kết nối NotebookLM ở Cài đặt › Tích hợp (dán cookie) trước khi đồng bộ.",
+      "mapping": "Mỗi file Spec tương ứng với một nguồn cùng tên trong notebook.",
+      "autoSyncOnApprove": {
+        "label": "Tự động đồng bộ lên NotebookLM sau khi Duyệt thay đổi"
+      },
+      "confirmBeforeSync": {
+        "label": "Hỏi xác nhận trước khi đồng bộ"
+      },
+      "checkLater": "Kết nối notebook sẽ được kiểm tra ngay sau khi tạo dự án.",
+      "import": {
+        "title": "Nhập Spec từ NotebookLM",
+        "hint": "Với thư mục chỉ lưu trên máy, bạn có thể lấy các nguồn văn bản của notebook làm file Spec ban đầu (tên file theo tiêu đề nguồn). File đã có trong thư mục sẽ không bị ghi đè. Chỉ nhập một lần khi tạo dự án, không tự tải về khi mở dự án.",
+        "needNotebook": "Nhập Notebook ID ở trên để xem danh sách nguồn.",
+        "loading": "Đang tải danh sách nguồn…",
+        "empty": "Notebook chưa có nguồn nào.",
+        "errorHint": "Hãy kiểm tra kết nối NotebookLM ở Cài đặt › Tích hợp.",
+        "count": "Đã chọn {selected}/{total} nguồn nhập được",
+        "selectAll": "Chọn tất cả",
+        "clear": "Bỏ chọn",
+        "notImportable": "Nguồn là PDF, trang web, YouTube hay Google Doc chỉ có phần văn bản được trích ra và mất định dạng, nên không nhập làm Spec được.",
+        "remoteFirst": "Bạn đã bật Git hoặc Drive nên Spec ban đầu được lấy từ đó, không nhập từ NotebookLM (thứ tự ưu tiên: Git, Drive, NotebookLM)."
+      }
+    },
+    "review": {
+      "name": "Tên",
+      "description": "Mô tả",
+      "path": "Thư mục làm việc",
+      "storage": "Nơi lưu",
+      "specsDirRoot": "thư mục gốc của Workspace",
+      "subdirRoot": "thư mục gốc của repo",
+      "repo": "Repo",
+      "subdir": "Thư mục Spec",
+      "publish": "Cách đẩy thay đổi",
+      "publishPush": "Commit và Push thẳng",
+      "publishPr": "Tạo branch và Pull/Merge Request",
+      "driveFolder": "Thư mục Drive",
+      "notebook": "NotebookLM",
+      "notebookLater": "Kết nối sau",
+      "hint": "Bấm Tạo dự án để tạo thư mục, tải repo hoặc thư mục Drive về máy, lưu cài đặt vào .spec-studio/config.json và thêm dự án vào danh sách.",
+      "notebookImport": "Nhập từ NotebookLM",
+      "notebookImportCount": "{count} nguồn thành file Spec"
+    },
+    "run": {
+      "title": "Tiến trình",
+      "create": {
+        "LOCAL": "Tạo thư mục và lưu cài đặt",
+        "GIT": "Tải repo về và lưu cài đặt",
+        "DRIVE": "Tải thư mục Drive về và lưu cài đặt",
+        "NOTEBOOK_IMPORT": "Tạo thư mục, nhập Spec từ NotebookLM và lưu cài đặt"
+      },
+      "createDescription": ".spec-studio/config.json · thêm vào danh sách Dự án",
+      "check": "Kiểm tra kết nối",
+      "checkDescription": "Thư mục, Git remote, quyền Drive, notebook",
+      "target": {
+        "FOLDER": "Thư mục",
+        "GIT_REMOTE": "Git remote",
+        "DRIVE": "Drive",
+        "NOTEBOOK": "Notebook"
+      },
+      "checkStatus": {
+        "OK": "Tốt",
+        "ERROR": "Lỗi",
+        "SKIPPED": "Bỏ qua"
+      },
+      "open": "Mở Workspace",
+      "openAnyway": "Vẫn mở",
+      "created": "Đã tạo dự án {name}"
+    }
+  }
+}
