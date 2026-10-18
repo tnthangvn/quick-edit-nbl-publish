@@ -10,7 +10,7 @@ Repo phát hành [quick-edit-nbl](https://www.npmjs.com/package/quick-edit-nbl) 
 ```
 source repo (private) ──git archive <ref>──► .work/src ──pnpm install + next build (standalone)──►
   dist/  (server.js + .next đã minify + static + public + messages, KHÔNG có src/.env/.map)
-    └─ push-release.sh ──► nhánh release + tag vX.Y.Z ──► GitHub Actions ──► npm publish
+    └─ push-release.sh ──► nhánh release + tag vX.Y.Z ──► GitHub Actions (OIDC) ──► npm publish
 ```
 
 `build-release.mjs`:
@@ -44,13 +44,24 @@ make release                 # build + commit + push nhánh release + tag → CI
 
 Trước mỗi release: bump `version` trong `package.json` của source (hoặc `VERSION=`). Script dừng nếu tag đã tồn tại; CI bỏ qua nếu version đã có trên npm. Không có `make` thì dùng `npm run build|release|release:dry|pack:check`.
 
-## Thiết lập một lần trên GitHub / npm
+## Thiết lập một lần trên npm (Trusted Publishing — không dùng token)
 
-1. Tạo token npm (Granular, quyền publish) → repo Settings → Secrets → Actions → `NPM_TOKEN`.
-2. `--provenance` cần repo **public**. Nếu để private, bỏ `--provenance` trong `release-branch/.github/workflows/publish.yml`.
-3. (Tuỳ chọn) Sau lần publish đầu, bật Trusted Publishing trên npmjs.com cho repo này + workflow `publish.yml`, rồi xoá `NPM_TOKEN`.
+CI publish bằng OIDC của GitHub Actions, không lưu npm token ở đâu cả. npm chỉ cho cấu hình Trusted Publisher khi package đã tồn tại, nên lần đầu publish tay:
 
-Publish tay không qua CI: `npm login` rồi `make publish-local`.
+1. Publish lần đầu từ máy (trong terminal thật, npm sẽ hỏi 2FA):
+   ```bash
+   npm login
+   make build
+   make publish-local
+   ```
+2. npmjs.com → package `quick-edit-nbl` → **Settings** → **Trusted Publisher** → **GitHub Actions**:
+   - Organization or user: `tnthangvn`
+   - Repository: `quick-edit-nbl-publish`
+   - Workflow filename: `publish.yml`
+   - Environment: để trống
+3. (Khuyến nghị) Cùng trang Settings → **Publishing access** → chọn *Require two-factor authentication and disallow tokens*: chỉ còn CI qua OIDC hoặc publish tay có 2FA.
+
+Từ lần sau chỉ cần `make release`; job tự sinh provenance vì repo public.
 
 ## Lưu ý
 
