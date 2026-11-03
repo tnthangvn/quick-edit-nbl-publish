@@ -10,7 +10,7 @@ This package ships a prebuilt production server: one command starts both the web
 
 ## Quick start
 
-Spec Studio keeps its config (`.env.local`) and data in the folder you start it from, so give it a folder of its own:
+Spec Studio keeps everything — config (`.env.local`) and data (`.spec-studio/`) — in the folder you start it from and writes nothing to your home folder. Give it a folder of its own; separate folders are separate installs:
 
 ```bash
 mkdir ~/spec-studio && cd ~/spec-studio
@@ -60,15 +60,15 @@ Settings are read from the shell environment, or from `.env.local` / `.env` in t
 | --- | --- | --- |
 | `PORT_START` | `3021` | Port the server listens on |
 | `DATA_DRIVER` | `JSON` | `JSON` (files in `DATA_DIR`) or `POSTGRES` |
-| `DATA_DIR` | `~/.spec-studio/data` (wizard sets `./.spec-studio/data`) | Data folder for the JSON driver |
+| `DATA_DIR` | `./.spec-studio/data` | Data folder for the JSON driver (relative to the current folder) |
 | `DATABASE_URL` | — | Postgres connection string (when `DATA_DRIVER=POSTGRES`) |
 | `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` | — | Google Drive storage and NotebookLM Drive sync |
-| `SECRET_ENCRYPTION_KEY` | auto-generated `~/.spec-studio/master.key` | 32-byte key (base64 or hex) that encrypts stored tokens and API keys |
-| `SPEC_STUDIO_HOME` | `~/.spec-studio` | App home folder (master key, default data) |
+| `SECRET_ENCRYPTION_KEY` | auto-generated `./.spec-studio/master.key` | 32-byte key (base64 or hex) that encrypts stored tokens and API keys |
+| `SPEC_STUDIO_HOME` | `./.spec-studio` | App folder (master key, default data), relative to the current folder |
 
 ## Your data
 
-- Tokens, API keys and passwords you enter are **encrypted** before they are stored. The encryption key lives in `SECRET_ENCRYPTION_KEY` or `~/.spec-studio/master.key`. **Back it up**: without it, stored secrets can't be read.
+- Tokens, API keys and passwords you enter are **encrypted** before they are stored. The encryption key lives in `SECRET_ENCRYPTION_KEY` or `./.spec-studio/master.key`. **Back it up**: without it, stored secrets can't be read.
 - Keep `.env.local` private. It is created with owner-only permissions; don't commit or share it.
 
 ## License

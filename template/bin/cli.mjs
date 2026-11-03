@@ -5,6 +5,7 @@
  *   quick-edit-nbl [--port <n>] [--host <name>]
  *
  * Env: .env / .env.local in the current directory are loaded if present (existing env wins).
+ * Config and data are kept in the current directory (.env.local, .spec-studio/).
  * PORT and HOSTNAME are read by the Next server; flags override them.
  */
 import { existsSync } from "node:fs";
@@ -57,6 +58,9 @@ if (flags.port && !/^\d+$/.test(flags.port)) {
 }
 
 loadEnvFiles();
+// Config (.env.local) and data (.spec-studio/) live in the folder the command runs from:
+// the standalone server chdirs into the package, so pass that folder explicitly.
+process.env.SPEC_STUDIO_ROOT ??= process.cwd();
 process.env.NODE_ENV = "production";
 process.env.NEXT_TELEMETRY_DISABLED ??= "1";
 process.env.PORT = flags.port ?? process.env.PORT_START ?? process.env.PORT ?? DEFAULT_PORT;
