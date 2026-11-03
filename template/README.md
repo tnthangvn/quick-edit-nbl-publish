@@ -70,7 +70,6 @@ Settings are read from the shell environment, or from `.env.local` / `.env` in t
 
 - Tokens, API keys and passwords you enter are **encrypted** before they are stored. The encryption key lives in `SECRET_ENCRYPTION_KEY` or `~/.spec-studio/master.key`. **Back it up**: without it, stored secrets can't be read.
 - Keep `.env.local` private. It is created with owner-only permissions; don't commit or share it.
-- The package uses the `JSON` driver by default. `POSTGRES` needs a database whose schema is already migrated; migrations are not shipped in this package.
 
 ## License
 
