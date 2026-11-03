@@ -19,7 +19,7 @@ source repo (private) ──git archive <ref>──► .work/src ──pnpm inst
 2. Ép `output: "standalone"` trong bản copy `next.config.ts` (không sửa source repo).
 3. Chỉ copy whitelist: `server.js`, `.next` (bỏ `cache`, `*.map`, `*.nft.json`), `.next/static`, `public`, `runtimeAssets`.
 4. Server externals của Turbopack (`.next/node_modules/pg-<hash>` …) được thay bằng shim re-export; package thật (`pg`, `@napi-rs/keyring`, `execa`, `chokidar`, `next`, `react`…) khai báo trong `dependencies`, pin đúng version trong lockfile → npm cài đúng binary theo OS người dùng.
-5. Leak scan: fail nếu `dist/` có đường dẫn máy build/source, `.env*`, `*.map`, `*.ts`, `src/`, `*.nft.json`, `CLAUDE.md`, `node_modules` lạ.
+5. Leak scan: fail nếu `dist/` có đường dẫn máy build/source, `.env*`, `*.map`, `*.ts`, `src/`, `*.nft.json`, file tài liệu nội bộ, `node_modules` lạ.
 
 ## Cấu hình
 
@@ -67,6 +67,6 @@ Từ lần sau chỉ cần `make release`; job tự sinh provenance vì repo pub
 
 - Bản build là JS đã minify, không có source map — khó đọc nhưng không phải mã hoá; đừng để secret trong source code.
 - Đường dẫn tuyệt đối máy build mà Next nhúng vào `server.js` / `required-server-files.json` được thay bằng `/app`; leak scan fail nếu còn sót đường dẫn máy build hoặc source repo trong `dist/`.
-- Migration Postgres (`db:migrate`) chạy bằng `tsx` trên source nên **không** có trong package; package mặc định dùng `DATA_DRIVER=JSON`.
+- Package mặc định dùng `DATA_DRIVER=JSON`; công cụ dựng schema Postgres không có trong package.
 - Nếu source thêm thư mục được đọc lúc chạy qua `process.cwd()` (như `messages/`), thêm vào `runtimeAssets`.
 - Nếu dòng `export default …` trong `next.config.ts` của source đổi, build fail và báo cần cập nhật marker trong `patchNextConfig()`.
