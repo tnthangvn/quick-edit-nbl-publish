@@ -10,7 +10,7 @@ This package ships a prebuilt production server: one command starts both the web
 
 ## Quick start
 
-Spec Studio keeps everything — config (`.env.local`) and data (`.spec-studio/`) — in the folder you start it from and writes nothing to your home folder. Give it a folder of its own; separate folders are separate installs:
+Spec Studio keeps everything — config (`.env.local`) and data (`.spec-studio/`) — in the folder you start it from and writes nothing to your home folder. Give it a folder of its own; separate folders are separate installs. Inside a git repo, `.spec-studio/` and `.env.local` are added to `.gitignore` automatically:
 
 ```bash
 mkdir ~/spec-studio && cd ~/spec-studio
@@ -60,11 +60,11 @@ Settings are read from the shell environment, or from `.env.local` / `.env` in t
 | --- | --- | --- |
 | `PORT_START` | `3021` | Port the server listens on |
 | `DATA_DRIVER` | `JSON` | `JSON` (files in `DATA_DIR`) or `POSTGRES` |
-| `DATA_DIR` | `./.spec-studio/data` | Data folder for the JSON driver (relative to the current folder) |
+| `DATA_DIR` | `./.spec-studio/data` | Data folder for the JSON driver; must stay inside the current folder |
 | `DATABASE_URL` | — | Postgres connection string (when `DATA_DRIVER=POSTGRES`) |
 | `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` | — | Google Drive storage and NotebookLM Drive sync |
 | `SECRET_ENCRYPTION_KEY` | auto-generated `./.spec-studio/master.key` | 32-byte key (base64 or hex) that encrypts stored tokens and API keys |
-| `SPEC_STUDIO_HOME` | `./.spec-studio` | App folder (master key, default data), relative to the current folder |
+| `SPEC_STUDIO_HOME` | `./.spec-studio` | App folder (master key, default data); must stay inside the current folder |
 
 ## Your data
 
