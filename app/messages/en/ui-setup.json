@@ -1,0 +1,89 @@
+{
+  "setup": {
+    "wizard": {
+      "title": "Set up Spec Studio",
+      "description": "First run on this machine: choose ports, where to store data, and connect Google (optional). You can change these later in Settings › System.",
+      "steps": {
+        "SERVER": "Server and data",
+        "GOOGLE": "Google Drive",
+        "REVIEW": "Review"
+      },
+      "next": "Continue",
+      "back": "Back",
+      "skip": "Skip",
+      "finish": "Save settings",
+      "googleOptional": "Optional. Only needed to save specs to Google Drive; you can add it later.",
+      "reviewHint": "Check everything before saving. Secrets are shown masked.",
+      "notSet": "Not set",
+      "autoKey": "Created on this machine",
+      "kept": "Unchanged",
+      "doneTitle": "Settings saved",
+      "doneBody": "Settings were saved for this project.",
+      "openApp": "Open Spec Studio"
+    },
+    "sections": {
+      "SERVER": "Server",
+      "DATA": "Data",
+      "SECURITY": "Security",
+      "GOOGLE": "Google Drive"
+    },
+    "fields": {
+      "port": {
+        "label": "Dev port",
+        "hint": "Port used when running in development mode (1024–65535)."
+      },
+      "portStart": {
+        "label": "Production port",
+        "hint": "Port used when running the build; must differ from the dev port."
+      },
+      "dataDriver": {
+        "label": "Data storage",
+        "JSON": "Files on this machine (default)",
+        "POSTGRES": "Postgres"
+      },
+      "dataDir": {
+        "label": "Data folder",
+        "hint": "Inside the project's .spec-studio folder, e.g. data or /data.",
+        "outside": "Currently using a folder outside the project. Leave empty to keep it."
+      },
+      "databaseUrl": {
+        "label": "Postgres connection URL",
+        "placeholder": "postgres://user:password@localhost:5432/spec_studio",
+        "setPlaceholder": "Saved — leave empty to keep"
+      },
+      "secretKey": {
+        "label": "Encryption key",
+        "hint": "Leave empty to let the app create a key on this machine. When moving machines, reuse the same key to read saved secrets.",
+        "locked": "An encryption key is already set. It can't be changed here to avoid losing saved secrets."
+      },
+      "googleClientId": {
+        "label": "Google Client ID"
+      },
+      "googleClientSecret": {
+        "label": "Google Client Secret",
+        "setPlaceholder": "Saved — leave empty to keep"
+      },
+      "googleHint": "Takes effect right after saving, no server restart needed."
+    },
+    "restart": {
+      "title": "Restart the server",
+      "body": "Ports, data storage or the encryption key changed. Restart the server to apply them. Google settings already use the new values."
+    },
+    "import": {
+      "button": "Import from .env file",
+      "title": "Import settings from a .env file",
+      "description": "Pick an existing .env file or paste its contents. Values are filled into the form so you can review them before saving.",
+      "pick": "Choose file",
+      "placeholder": "PORT=3020\nDATA_DIR=./.spec-studio/data",
+      "apply": "Fill form",
+      "empty": "No usable settings found in this content.",
+      "applied": "Filled {count} fields from the file."
+    },
+    "system": {
+      "description": "Ports, data storage and Google connection for this project.",
+      "saved": "System settings saved.",
+      "saveFailed": "Couldn't save system settings.",
+      "loadFailed": "Couldn't load system settings."
+    }
+  }
+}

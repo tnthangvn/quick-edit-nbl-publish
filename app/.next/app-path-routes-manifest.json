@@ -35,6 +35,7 @@
   "/api/settings/export/route": "/api/settings/export",
   "/api/settings/import/route": "/api/settings/import",
   "/api/settings/route": "/api/settings",
+  "/api/settings/system/route": "/api/settings/system",
   "/api/workspaces/[workspaceId]/check/route": "/api/workspaces/[workspaceId]/check",
   "/api/workspaces/[workspaceId]/config/route": "/api/workspaces/[workspaceId]/config",
   "/api/workspaces/[workspaceId]/events/route": "/api/workspaces/[workspaceId]/events",

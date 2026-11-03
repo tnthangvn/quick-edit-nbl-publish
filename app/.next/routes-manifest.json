@@ -458,6 +458,12 @@
       "namedRegex": "^/api/settings/import(?:/)?$"
     },
     {
+      "page": "/api/settings/system",
+      "regex": "^/api/settings/system(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/settings/system(?:/)?$"
+    },
+    {
       "page": "/api/workspaces",
       "regex": "^/api/workspaces(?:/)?$",
       "routeKeys": {},

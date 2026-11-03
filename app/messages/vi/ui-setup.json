@@ -1,0 +1,89 @@
+{
+  "setup": {
+    "wizard": {
+      "title": "Thiết lập Spec Studio",
+      "description": "Lần đầu chạy trên máy này: chọn port, nơi lưu dữ liệu và kết nối Google (tuỳ chọn). Sửa lại được ở Cài đặt › Hệ thống.",
+      "steps": {
+        "SERVER": "Server và dữ liệu",
+        "GOOGLE": "Google Drive",
+        "REVIEW": "Xem lại"
+      },
+      "next": "Tiếp tục",
+      "back": "Quay lại",
+      "skip": "Bỏ qua",
+      "finish": "Lưu cấu hình",
+      "googleOptional": "Không bắt buộc. Chỉ cần khi lưu spec lên Google Drive; có thể thêm sau.",
+      "reviewHint": "Kiểm tra lại trước khi lưu. Thông tin bí mật chỉ hiện dạng đã che.",
+      "notSet": "Chưa nhập",
+      "autoKey": "Tự tạo trên máy này",
+      "kept": "Giữ nguyên",
+      "doneTitle": "Đã lưu cấu hình",
+      "doneBody": "Cấu hình đã được lưu cho project này.",
+      "openApp": "Vào Spec Studio"
+    },
+    "sections": {
+      "SERVER": "Server",
+      "DATA": "Dữ liệu",
+      "SECURITY": "Bảo mật",
+      "GOOGLE": "Google Drive"
+    },
+    "fields": {
+      "port": {
+        "label": "Port khi phát triển",
+        "hint": "Port mở app khi chạy chế độ phát triển (1024–65535)."
+      },
+      "portStart": {
+        "label": "Port bản build",
+        "hint": "Port khi chạy bản build, phải khác port phát triển."
+      },
+      "dataDriver": {
+        "label": "Nơi lưu dữ liệu",
+        "JSON": "File trên máy (mặc định)",
+        "POSTGRES": "Postgres"
+      },
+      "dataDir": {
+        "label": "Thư mục dữ liệu",
+        "hint": "Nằm trong thư mục .spec-studio của project, vd data hoặc /data.",
+        "outside": "Đang dùng một thư mục ngoài project. Để trống để giữ nguyên."
+      },
+      "databaseUrl": {
+        "label": "Địa chỉ kết nối Postgres",
+        "placeholder": "postgres://user:password@localhost:5432/spec_studio",
+        "setPlaceholder": "Đã lưu — để trống để giữ nguyên"
+      },
+      "secretKey": {
+        "label": "Khoá mã hoá",
+        "hint": "Để trống: app tự tạo khoá trên máy này. Khi chuyển máy, dùng lại đúng khoá cũ để đọc được thông tin đã lưu.",
+        "locked": "Đã đặt khoá mã hoá. Không đổi ở đây để tránh mất thông tin bí mật đã lưu."
+      },
+      "googleClientId": {
+        "label": "Google Client ID"
+      },
+      "googleClientSecret": {
+        "label": "Google Client Secret",
+        "setPlaceholder": "Đã lưu — để trống để giữ nguyên"
+      },
+      "googleHint": "Lưu là dùng ngay, không cần khởi động lại server."
+    },
+    "restart": {
+      "title": "Cần khởi động lại server",
+      "body": "Port, nơi lưu dữ liệu hoặc khoá mã hoá vừa đổi. Khởi động lại server để áp dụng. Kết nối Google đã dùng cấu hình mới ngay."
+    },
+    "import": {
+      "button": "Nhập từ file .env",
+      "title": "Nhập cấu hình từ file .env",
+      "description": "Chọn file .env có sẵn hoặc dán nội dung vào đây. Thông tin được điền vào form để bạn xem lại trước khi lưu.",
+      "pick": "Chọn file",
+      "placeholder": "PORT=3020\nDATA_DIR=./.spec-studio/data",
+      "apply": "Điền vào form",
+      "empty": "Không tìm thấy cấu hình nào dùng được trong nội dung này.",
+      "applied": "Đã điền {count} mục từ file."
+    },
+    "system": {
+      "description": "Port, nơi lưu dữ liệu và kết nối Google của project này.",
+      "saved": "Đã lưu cấu hình hệ thống.",
+      "saveFailed": "Không lưu được cấu hình hệ thống.",
+      "loadFailed": "Không tải được cấu hình hệ thống."
+    }
+  }
+}

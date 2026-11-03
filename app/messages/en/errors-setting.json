@@ -6,7 +6,11 @@
       "WORKSPACE_ID_MISMATCH": "These settings do not belong to the current Workspace.",
       "SECRET_NOT_SET": "Credentials have not been entered ({kind}).",
       "SECRET_NOT_REVEALABLE": "This information cannot be shown again ({kind}).",
-      "PR_BRANCH_IS_BASE": "The PR branch must be different from the base branch."
+      "PR_BRANCH_IS_BASE": "The PR branch must be different from the base branch.",
+      "INVALID_DATA_DIR": "The data folder must be inside the project's .spec-studio folder (no \"..\" or absolute paths).",
+      "PORT_CONFLICT": "The production port must differ from the dev port.",
+      "DATABASE_URL_REQUIRED": "Postgres needs a database connection URL.",
+      "ENCRYPTION_KEY_LOCKED": "The encryption key is already set. Changing it would lose saved secrets, so it can't be changed here."
     }
   }
 }

@@ -9,7 +9,8 @@
       "NOTEBOOK": "Đồng bộ NotebookLM",
       "WORKSPACE": "Workspace và lưu trữ",
       "INTEGRATIONS": "Tích hợp",
-      "EXPORT_IMPORT": "Xuất/Nhập"
+      "EXPORT_IMPORT": "Xuất/Nhập",
+      "SYSTEM": "Hệ thống"
     },
     "loading": "Đang tải cài đặt…",
     "loadFailed": "Không tải được cài đặt",

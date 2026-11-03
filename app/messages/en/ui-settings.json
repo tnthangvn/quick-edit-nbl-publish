@@ -9,7 +9,8 @@
       "NOTEBOOK": "NotebookLM Sync",
       "WORKSPACE": "Workspace & Storage",
       "INTEGRATIONS": "Integrations",
-      "EXPORT_IMPORT": "Export/Import"
+      "EXPORT_IMPORT": "Export/Import",
+      "SYSTEM": "System"
     },
     "loading": "Loading settings…",
     "loadFailed": "Couldn't load settings",

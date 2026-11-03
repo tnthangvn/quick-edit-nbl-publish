@@ -1,5 +1,7 @@
 # Lives only on the `release` branch (copied there by scripts/push-release.sh from main:release-branch/).
-# The branch holds the built package only; this job publishes it to npm.
+# The branch holds the built package only; this job publishes it to npm via Trusted Publishing (OIDC):
+# no npm token is stored anywhere. Configure it once on npmjs.com → package Settings → Trusted Publisher
+# (GitHub Actions, repo tnthangvn/quick-edit-nbl-publish, workflow publish.yml).
 name: Publish to npm
 
 on:
@@ -9,7 +11,7 @@ on:
 
 permissions:
   contents: read
-  id-token: write # npm provenance / trusted publishing
+  id-token: write # OIDC token for npm Trusted Publishing (also signs provenance)
 
 concurrency:
   group: npm-publish
@@ -24,7 +26,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-          registry-url: https://registry.npmjs.org
+
+      # Trusted Publishing needs npm >= 11.5.1
+      - name: Update npm
+        run: npm install -g npm@11
 
       - name: Skip if version already published
         id: check
@@ -38,6 +43,4 @@ jobs:
 
       - name: Publish
         if: steps.check.outputs.skip != 'true'
-        run: npm publish --provenance --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --access public

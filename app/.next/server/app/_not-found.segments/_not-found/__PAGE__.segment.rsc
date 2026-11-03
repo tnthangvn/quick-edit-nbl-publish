@@ -1,19 +1,19 @@
 1:"$Sreact.fragment"
 2:"$Sreact.suspense"
-8:"/_next/static/chunks/33pqsui_v38o5.js"
+8:"/_next/static/chunks/1npkudyyjpi51.js"
 9:"/_next/static/chunks/20wh5wi3fhm6u.js"
-a:"/_next/static/chunks/36rpd0av9khry.js"
-b:"/_next/static/chunks/0g7hd-zr7gxyx.js"
-c:I[639063,["$8","$9","$a","$b"],"default"]
-d:I[764269,["$8","$9","$a","$b"],"default"]
-11:I[19006,["$8","$9","$a","$b"],"OutletBoundary"]
+a:"/_next/static/chunks/20be2c2n6ap92.js"
+b:"/_next/static/chunks/1tr3evi9tdek6.js"
+c:I[129604,["$8","$9","$a","$b"],"default"]
+d:I[572884,["$8","$9","$a","$b"],"default"]
+11:I[185083,["$8","$9","$a","$b"],"OutletBoundary"]
 15:"ViewportBoundary"
-16:I[19006,["$8","$9","$a","$b"],"$15"]
+16:I[185083,["$8","$9","$a","$b"],"$15"]
 17:"MetadataBoundary"
-18:I[19006,["$8","$9","$a","$b"],"$17"]
-19:I[725748,["$8","$9","$a","$b"],"IconMark"]
-:HL["/_next/static/chunks/0c-8cfgovices.css","style"]
-:HL["/_next/static/chunks/3glbyyjdl0rka.css","style"]
+18:I[185083,["$8","$9","$a","$b"],"$17"]
+19:I[245931,["$8","$9","$a","$b"],"IconMark"]
+:HL["/_next/static/chunks/2nryh4oumfzcl.css","style"]
+:HL["/_next/static/chunks/1vwlxr6fd0di1.css","style"]
 5:X
 5:C
 6:X
@@ -29,7 +29,7 @@ f:C
 1b:C
 1e:X
 1e:C
-0:{"t":{"t":{"s":"","h":82,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0c-8cfgovices.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/3glbyyjdl0rka.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/33pqsui_v38o5.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/20wh5wi3fhm6u.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/36rpd0av9khry.js","async":true}],["$","script","script-3",{"src":"/_next/static/chunks/0g7hd-zr7gxyx.js","async":true}]],["$","html",null,{"lang":"vi","suppressHydrationWarning":true,"className":"BiM78G_variable _8Li5zG_variable h-full","children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(()=>{try{var m=document.cookie.match(/(?:^|; )NEXT_LOCALE=(vi|en)/);if(m)document.documentElement.lang=m[1]}catch(e){}})()"}}]}],["$","body",null,{"className":"h-full","children":["$","$2",null,{"fallback":null,"children":"$L3"}]}]]}]]}],"p":"$@4","v":"$5","s":"$6"},"c":"$Q7"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L16",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L18",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$2",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Spec Studio"}],["$","meta","1",{"name":"description","content":"Sửa spec Markdown cùng AI Agent và đồng bộ lên NotebookLM"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L19","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1a","v":"$1b","s":"$6"}},"a":"$@1c","u":"$@1d","b":"Zmp9Jfe94u_f6HbtbCqnb","r":"$1e"}
+0:{"t":{"t":{"s":"","h":82,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/2nryh4oumfzcl.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/1vwlxr6fd0di1.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/1npkudyyjpi51.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/20wh5wi3fhm6u.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/20be2c2n6ap92.js","async":true}],["$","script","script-3",{"src":"/_next/static/chunks/1tr3evi9tdek6.js","async":true}]],["$","html",null,{"lang":"vi","suppressHydrationWarning":true,"className":"BiM78G_variable _8Li5zG_variable h-full","children":[["$","head",null,{"children":["$","script",null,{"dangerouslySetInnerHTML":{"__html":"(()=>{try{var m=document.cookie.match(/(?:^|; )NEXT_LOCALE=(vi|en)/);if(m)document.documentElement.lang=m[1]}catch(e){}})()"}}]}],["$","body",null,{"className":"h-full","children":["$","$2",null,{"fallback":null,"children":"$L3"}]}]]}]]}],"p":"$@4","v":"$5","s":"$6"},"c":"$Q7"},"h":{"r":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L16",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L18",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$2",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Spec Studio"}],["$","meta","1",{"name":"description","content":"Sửa spec Markdown cùng AI Agent và đồng bộ lên NotebookLM"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.117ezoe8m31dk.ico","sizes":"48x48","type":"image/x-icon"}],["$","$L19","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1a","v":"$1b","s":"$6"}},"a":"$@1c","u":"$@1d","b":"s2md8B0utVL-Uy9xKJ1vK","r":"$1e"}
 12:null
 1d:true
 1c:null

@@ -35,6 +35,7 @@
   "/api/settings/export/route": "app/api/settings/export/route.js",
   "/api/settings/import/route": "app/api/settings/import/route.js",
   "/api/settings/route": "app/api/settings/route.js",
+  "/api/settings/system/route": "app/api/settings/system/route.js",
   "/api/workspaces/[workspaceId]/check/route": "app/api/workspaces/[workspaceId]/check/route.js",
   "/api/workspaces/[workspaceId]/config/route": "app/api/workspaces/[workspaceId]/config/route.js",
   "/api/workspaces/[workspaceId]/events/route": "app/api/workspaces/[workspaceId]/events/route.js",

@@ -6,7 +6,11 @@
       "WORKSPACE_ID_MISMATCH": "Cấu hình này không thuộc Workspace hiện tại.",
       "SECRET_NOT_SET": "Chưa nhập thông tin xác thực ({kind}).",
       "SECRET_NOT_REVEALABLE": "Không thể xem lại thông tin này ({kind}).",
-      "PR_BRANCH_IS_BASE": "Nhánh tạo PR phải khác nhánh gốc."
+      "PR_BRANCH_IS_BASE": "Nhánh tạo PR phải khác nhánh gốc.",
+      "INVALID_DATA_DIR": "Thư mục dữ liệu phải nằm trong thư mục .spec-studio của project (không dùng \"..\" hay đường dẫn tuyệt đối).",
+      "PORT_CONFLICT": "Port chạy bản build phải khác port dev.",
+      "DATABASE_URL_REQUIRED": "Chọn Postgres thì cần nhập địa chỉ kết nối cơ sở dữ liệu.",
+      "ENCRYPTION_KEY_LOCKED": "Khoá mã hoá đã được đặt. Đổi khoá sẽ làm mất các thông tin bí mật đã lưu nên không đổi ở đây."
     }
   }
 }
