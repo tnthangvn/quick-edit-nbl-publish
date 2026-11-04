@@ -51,8 +51,7 @@ CI publish bằng OIDC của GitHub Actions, không lưu npm token ở đâu c�
 1. Publish lần đầu từ máy (trong terminal thật, npm sẽ hỏi 2FA):
    ```bash
    npm login
-   make build
-   make publish-local
+   make publish-local   # tự build dist/ trước rồi publish
    ```
 2. npmjs.com → package `quick-edit-nbl` → **Settings** → **Trusted Publisher** → **GitHub Actions**:
    - Organization or user: `tnthangvn`

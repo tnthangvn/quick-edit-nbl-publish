@@ -75,8 +75,8 @@ release: build ## Build + commit nhánh release + tag + push → CI publish npm
 	@$(NODE) scripts/push-release.sh
 
 .PHONY: publish-local
-publish-local: ## Publish dist/ thẳng lên npm từ máy này (cần npm login)
-	@test -f dist/package.json || { echo "Chưa có dist/: chạy make build"; exit 1; }
+publish-local: build ## Build + publish dist/ thẳng lên npm từ máy này (cần npm login)
+	@$(NODE) node -p 'const p = require("./dist/package.json"); `publish $${p.name}@$${p.version} (source $${p.buildInfo.sourceCommit.slice(0, 7)})`'
 	@$(NODE) cd dist && npm publish --access public
 
 .PHONY: undo-dry
